@@ -1,716 +1,232 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>宇宙庇护所 -  笑把金樽邀落日，绿杨城郭正春风。</title><meta name="author" content="Pekoe"><meta name="copyright" content="Pekoe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪">
+<meta property="og:type" content="website">
+<meta property="og:title" content="宇宙庇护所">
 <meta property="og:url" content="http://example.com/page/3/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="宇宙庇护所">
+<meta property="og:description" content="追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true">
+<meta property="article:author" content="Pekoe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '宇宙庇护所',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-05-20 21:48:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-My-New-Post-20" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/31/My-New-Post-20/" class="article-date">
-  <time class="dt-published" datetime="2021-03-31T09:36:16.000Z" itemprop="datePublished">2021-03-31</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('https://images5.alphacoders.com/110/1107810.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="宇宙庇护所"><img class="site-icon" src="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true"/><span class="site-name">宇宙庇护所</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">宇宙庇护所</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/02/My-New-Post-23/" title="2021年4月2日">2021年4月2日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-02T13:40:55.000Z" title="发表于 2021-04-02 21:40:55">2021-04-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/R%E8%AF%AD%E8%A8%80/">R语言</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/NLP/">NLP</a></span></div><div class="content">开始学习R语言啰，感觉比Python简单好多。感谢被Python狂虐的时光。
+以下是今天安装和使用的步骤
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/31/My-New-Post-20/">2021年3月31日</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>看到豆瓣友邻给<code>桶川跟踪狂杀人事件</code>打了五星，于是好奇地去看了这部高评分书籍的评论区，然后发现一段令人悲伤的书后记：</p>
-<blockquote>
-<p>最后我想提一件私事，就是本书中也曾提到的我的女儿。<br>诗织的命案发生后刚好第三年的秋天，我的女儿过世了。一场突来的事故结束了她的一生。我在工作中接到消息，甚至无法见死去的她一面。<br>我对桶川案件感同身受，但是当时的我并不了解失去孩子究竟是怎么一回事。我从来不曾想过自己竟会在人生当中亲身体验。<br>女儿珍惜的各种物品、之助的照片，以及再也不会有人躺卧的小床……<br>“爸爸……”如今再也不会有女儿的声音响起的那个房间，只剩下时钟的秒针滴答作响。<br>世上是有无可奈何的事的。而死亡，就是再也见不到那个人。女儿的死带给我的就只有这两项体悟，其余的全是失落。<br>直到那天以前，我都不知道诞生在世上的女儿，原来只有十四年的光阴，就这样任由每一天过去。请允许我这个再也无法为女儿做任何事的没出息老爸，在最后写下小女的名字。<br>我为小女取的名字、往后再也无法呼唤的名字，叫作清水梓。</p>
-<p>二〇〇四年五月清水洁</p>
-</blockquote>
+安装使用参考网址
+ XQuartz-2.8.0.dmg安装
+ R 4.0.5安装
+ R studio安装
+ issue的解决
+开始执行，出现问题：WARNING: You&#39;re using a non-UTF8 locale, therefore only ASCII
+参考网页，解决方式参考第一个回答
+终端输入defaults write org.R-project.R force.LANG en_US.UTF-8，重启R语言软件，解决
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/31/My-New-Post-20/" data-id="clhvzvr93000tzkwj9epih9my" data-title="2021年3月31日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
 
+&amp;nbsp;
+学习进度
 
+2 新手上路 R Basics 12.1 [x] R的数学运算：2.2 [x] 赋值2.3 [x] 使用 ? or help() 查询2.4 [x] 功能包2.5 [x] 查看路径和设置路径2.6 [x] 数据类型2.7 [x] 数据结构2.8 [x] 常用函数
+&amp;nbsp;
+2021年4月27日
 
-  
-    <article id="post-My-New-Post-19" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/29/My-New-Post-19/" class="article-date">
-  <time class="dt-published" datetime="2021-03-29T12:28:46.000Z" itemprop="datePublished">2021-03-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
+顺便存一下R语言积累的代码，也算是学到Text Analysis with R的Chapt ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/02/My-New-Post-22/" title="读笔 之 烽火与流星">读笔 之 烽火与流星</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-02T08:54:45.000Z" title="发表于 2021-04-02 16:54:45">2021-04-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%AF%BB%E7%AC%94/">读笔</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%86%99%E4%BD%9C/">写作</a></span></div><div class="content">烽火与流星认为在普通人的观念里，梁朝是一个消逝的时代，很多人不知道魏晋南北朝在哪个时代里，它在史书上亦被定义为——汉唐之间灰暗的、长达四个世纪的转折。我突然领悟为什么老师们对南北朝情有独钟。所谓，诗家穷而后工，艺术往往在悲怆之后达到新高度。“南朝四百八十寺”，从南北朝，众多普通人如何在颠沛里存有向往美好的心，我们可以看见、甚至同情，连带为时运不济的自己感到悲哀。“多少楼台烟雨中”，时间不会停留，它像一汪江水，风雨中带走尘世的所有，带走美好和凄惨的故事，最终剩下世人的言谈和书纸。于是终于体会到无情中的有情。透过南北朝的“风流总被，雨打风吹去”，可以想见在茫茫宇宙沧海中，我们不可避免会化成尘土。但在浩瀚银河里，幸福不会永恒，灾难亦不会永恒。BGM：梶浦由记 - Everytime You Kissed Me
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/02/My-New-Post-21/" title="我的阅读记忆">我的阅读记忆</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-02T08:44:23.000Z" title="发表于 2021-04-02 16:44:23">2021-04-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%86%99%E4%BD%9C/">写作</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%86%99%E4%BD%9C/">写作</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">2014或2015年，在某次检索中发现一句极其漂亮的翻译，译者笔名为海裔（现北大章勇乐）。
+12但是同时，时间飞逝、飞逝，一去不返，而我们被爱俘获，依次巡行。
+回想搜索缘由，更像是对本科古典学教授的检索，无意中闯入一位他前陌生友人学者的博客，发现了这段话。犹记博客似乎还有朝圣山之思的名称。翻译之妙，让我第一次萌生了学好英语和自学拉丁文的想法。
+彼时我英语糟糕，拉丁文更是无从学起。背下了这句几年后全网再也找不见的诗句翻译，开始跌跌撞撞。当年去拉丁原典网页先找英文翻译版，再跳转拉丁文版，然后看不懂，没了下文。今年想起，又翻印象笔记，发现自己过去竟然没有保存过这句的准确出处，只好重新谷歌检索，技术日新月异，我运气不好，重新定位堪堪差一页便放弃，转念利用time flies，居然被我发现，最初的来源即是我要搜寻的拉丁文诗句，大喜，确认在Book3 Line284，速速重新定位，再跳转原文，终得寻见。
+123Sed fugit interea, fugit inreparabile tempus,Singula dum capti circumvectamur amore.——Verg. G.  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/31/My-New-Post-20/" title="2021年3月31日">2021年3月31日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-31T09:36:16.000Z" title="发表于 2021-03-31 17:36:16">2021-03-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%86%99%E4%BD%9C/">写作</a></span></div><div class="content">看到豆瓣友邻给桶川跟踪狂杀人事件打了五星，于是好奇地去看了这部高评分书籍的评论区，然后发现一段令人悲伤的书后记：
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/29/My-New-Post-19/">2021年3月29日</a>
-    </h1>
-  
+最后我想提一件私事，就是本书中也曾提到的我的女儿。诗织的命案发生后刚好第三年的秋天，我的女儿过世了。一场突来的事故结束了她的一生。我在工作中接到消息，甚至无法见死去的她一面。我对桶川案件感同身受，但是当时的我并不了解失去孩子究竟是怎么一回事。我从来不曾想过自己竟会在人生当中亲身体验。女儿珍惜的各种物品、之助的照片，以及再也不会有人躺卧的小床……“爸爸……”如今再也不会有女儿的声音响起的那个房间，只剩下时钟的秒针滴答作响。世上是有无可奈何的事的。而死亡，就是再也见不到那个人。女儿的死带给我的就只有这两项体悟，其余的全是失落。直到那天以前，我都不知道诞生在世上的女儿，原来只有十四年的光阴，就这样任由每一天过去。请允许我这个再也无法为女儿做任何事的没出息老爸，在最后写下小女的名字。我为小女取的名字、往后再也无法呼唤的名字，叫作清水梓。
+二〇〇四年五月清水洁
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这技巧真是举世通用。细想是因为口头表达是线性，如果这也能表达得好，那么，放到一目十行的文本中，想必也能条理清晰，便于他人理解。</p>
-<blockquote>
-<p>简单易行的写作技巧:</p>
-<ol>
-<li>把文章写出来；</li>
-<li>向朋友解释你在里面说了些什么；</li>
-<li>回去用刚才对朋友说的话把文章重写一遍。 ​​​​(@Paul Graham)</li>
-</ol>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>看大佬发言意识到，作为丢三落四的小垃圾，我处理任务时没办法安排先后，这两点归结到底是同一点，工作记忆容量太小。因为小，所以不能同时把握框架和细节；因为小，所以不能在脑内排次序；因为小，所以写长短落也缺少连接逻辑。那么问题来了，天生的容量短板还能弥补成长板吗？虽然也收藏过工作记忆训练的程式，但总归是很难应用到生活里。感觉没救了。</p>
-<blockquote>
-<p>另，今天发现一个盲点，我自己平时看论文或者找资料或者画图时形成逻辑链的过程原来不是每个人都有的……逻辑链举例：我的大目标是搭桥从A走到B，暂时不通，但别人做过C可以稍微把A那边搭住一点，我该怎么在C的基础上把桥往B搭？有没有连住C可以接近B的方法D？<br>我几周前和博士生之一讨论时没明说一个链（另一个PI也点到了同一个链的入口），于是我以为ta自动会往那个逻辑链下去一步步验证的，结果ta搁到现在根本没往那条逻辑链深入……我都不知道该怎么训练ta……<br>我自己现在不用怎么去逼着想就自动连好逻辑链了，训练大概也是潜移默化在科研或画图里练的，其中一环大概是要有很大的短期记忆力（内存要大？），同时要把N个东西放在脑子里然后去操作去整合。这个在我画图构图找资料的时候也是一样的，需要把大量东西整合到同一个图里，理顺逻辑和表达重点，确定哪几个东西不会画、需要找资料，然后一个个搜，不落下任何一个。我以前（2014年）需要一条条写下来才能整合，现在不需要了。<br>但这真的没法教啊……给一大堆我的实际操作案例也不一定能教会人自动去连啊……(@JaneMere)</p>
-</blockquote>
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/29/My-New-Post-19/" title="2021年3月29日">2021年3月29日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-29T12:28:46.000Z" title="发表于 2021-03-29 20:28:46">2021-03-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%86%99%E4%BD%9C/">写作</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">这技巧真是举世通用。细想是因为口头表达是线性，如果这也能表达得好，那么，放到一目十行的文本中，想必也能条理清晰，便于他人理解。
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/29/My-New-Post-19/" data-id="clhvzvr90000jzkwjfr4jhd97" data-title="2021年3月29日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
+简单易行的写作技巧:
 
-    </footer>
-  </div>
-  
-</article>
+把文章写出来；
+向朋友解释你在里面说了些什么；
+回去用刚才对朋友说的话把文章重写一遍。 ​​​​(@Paul Graham)
 
 
+&amp;nbsp;
+看大佬发言意识到，作为丢三落四的小垃圾，我处理任务时没办法安排先后，这两点归结到底是同一点，工作记忆容量太小。因为小，所以不能同时把握框架和细节；因为小，所以不能在脑内排次序；因为小，所以写长短落也缺少连接逻辑。那么问题来了，天生的容量短板还能弥补成长板吗？虽然也收藏过工作记忆训练的程式，但总归是很难应用到生活里。感觉没救了。
 
-  
-    <article id="post-My-New-Post-18" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/26/My-New-Post-18/" class="article-date">
-  <time class="dt-published" datetime="2021-03-26T15:43:17.000Z" itemprop="datePublished">2021-03-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
+另，今天发现一个盲点，我自己平时看论文或者找资料或者画图时形成逻辑链的过程原来不是每个人都有的……逻辑链举例：我的大目标是搭桥从A走到B，暂时不通，但别人做过C可以稍微把A那边搭住一点，我该怎么在C的基础上把桥往B搭？有没有连住C可以接近B的方法D？我几周前和博士生之一讨论时没明说一个链（另一个PI也点到了同一个链的入口），于是我以为ta自动会往那个逻辑链下去 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/26/My-New-Post-18/" title="2021年3月26日">2021年3月26日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-26T15:43:17.000Z" title="发表于 2021-03-26 23:43:17">2021-03-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">看到豆瓣的一个话题：我逐渐受锤的黄金时代。
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/19/My-New-Post-17/" title="2021年3月19日">2021年3月19日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-19T10:17:26.000Z" title="发表于 2021-03-19 18:17:26">2021-03-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">光是宇宙中最自由的东西。以光速前进的它自己感受不到任何时间的流逝，一瞬遍历宇宙却老不过一秒，想去哪里都可以。（@李子李子短信）
+一介尘民做喜欢且能安身立命之本，乃人生一大幸事。（@Emmanuel_plume翼）
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/16/My-New-Post-16/" title="2021年3月16日">2021年3月16日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-16T05:31:21.000Z" title="发表于 2021-03-16 13:31:21">2021-03-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">人这辈子最难的就是追求自己追求不到的东西，最痛苦的就是看不到自己身边的幸福。为什么？因为想要事事美满，因为不知足。五蕴炽盛，爱别离，怨憎会，求不得。山谷可溢，人心难平。
+&amp;nbsp;
+今年国产好剧真多。赘婿、山河令、司藤、城池堡垒，眼看欧美日韩剧大家追得越来越少，顿觉文化产业的兴起是令人骄傲的事。不过，对于广电的「建国后不能成精」这种创意牵制，还是很无语。如果不是这样，还会有多少好剧涌现呢？
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/13/My-New-Post-15/" title="2021年3月13日">2021年3月13日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-13T04:41:22.000Z" title="发表于 2021-03-13 12:41:22">2021-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%A7%82%E5%AF%9F/">观察</a></span></div><div class="content">最近看到的几个句子：
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/26/My-New-Post-18/">2021年3月26日</a>
-    </h1>
-  
+人类的傲慢，在于以为自己能够主宰自己。实际上，上帝卖给你的是一部没有越狱，没有Root的设备。你对你的身体只拥有很小的一部分权限，很多生理的需求是不可能由你自己决定的。（@阅读兽ReadingCub）
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>看到豆瓣的一个话题：我逐渐受锤的黄金时代。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/26/My-New-Post-18/" data-id="clhvzvr8z000fzkwj33fof3ec" data-title="2021年3月26日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
+拖延的代价是你本可以过的生活。​（@Danny Thompson）不要透支未来——克服拖延的一剂良药。（@爱可可-爱生活）
 
-    </footer>
-  </div>
-  
-</article>
 
+我发现人有一个特质，那就是你刚好能承受你所遭遇的。（@荞麦chen）讲的是一个母亲养育自闭症孩子的故事我每天努力奔跑，直到双脚麻木，大脑空白，那样的我才会忘记生活的苦。（@missliana）
 
-
-  
-    <article id="post-My-New-Post-17" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/19/My-New-Post-17/" class="article-date">
-  <time class="dt-published" datetime="2021-03-19T10:17:26.000Z" itemprop="datePublished">2021-03-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/19/My-New-Post-17/">2021年3月19日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>光是宇宙中最自由的东西。以光速前进的它自己感受不到任何时间的流逝，一瞬遍历宇宙却老不过一秒，想去哪里都可以。（@李子李子短信）</p>
-<p>一介尘民做喜欢且能安身立命之本，乃人生一大幸事。（@Emmanuel_plume翼）</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/19/My-New-Post-17/" data-id="clhvzvr91000lzkwj4fr02trg" data-title="2021年3月19日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-16" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/16/My-New-Post-16/" class="article-date">
-  <time class="dt-published" datetime="2021-03-16T05:31:21.000Z" itemprop="datePublished">2021-03-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/16/My-New-Post-16/">2021年3月16日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>人这辈子最难的就是追求自己追求不到的东西，最痛苦的就是看不到自己身边的幸福。为什么？因为想要事事美满，因为不知足。五蕴炽盛，爱别离，怨憎会，求不得。山谷可溢，人心难平。</p>
-<p>&amp;nbsp;</p>
-<p>今年国产好剧真多。赘婿、山河令、司藤、城池堡垒，眼看欧美日韩剧大家追得越来越少，顿觉文化产业的兴起是令人骄傲的事。不过，对于广电的「建国后不能成精」这种创意牵制，还是很无语。如果不是这样，还会有多少好剧涌现呢？</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/16/My-New-Post-16/" data-id="clhvzvr8y000ezkwj3se93j7q" data-title="2021年3月16日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-15" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/13/My-New-Post-15/" class="article-date">
-  <time class="dt-published" datetime="2021-03-13T04:41:22.000Z" itemprop="datePublished">2021-03-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/13/My-New-Post-15/">2021年3月13日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>最近看到的几个句子：</p>
-<blockquote>
-<p>人类的傲慢，在于以为自己能够主宰自己。实际上，上帝卖给你的是一部没有越狱，没有Root的设备。你对你的身体只拥有很小的一部分权限，很多生理的需求是不可能由你自己决定的。（@阅读兽ReadingCub）</p>
-</blockquote>
-<blockquote>
-<p>拖延的代价是你本可以过的生活。​（@Danny Thompson）<br>不要透支未来——克服拖延的一剂良药。（@爱可可-爱生活）</p>
-</blockquote>
-<blockquote>
-<p>我发现人有一个特质，那就是你刚好能承受你所遭遇的。（@荞麦chen）<code>讲的是一个母亲养育自闭症孩子的故事</code><br>我每天努力奔跑，直到双脚麻木，大脑空白，那样的我才会忘记生活的苦。（@missliana）</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>最近在和一位老同学A聊天，因为我们都是对资本造星特别鄙夷，所以聊天时经常会有比较讽刺的话语。但令我惊讶的是，A天生的毒舌不仅限于在私聊时谈及他人，而且已经延伸到对同为谈话对象的我。比如，当我谈某些明星，A会用阴阳怪气的语气；当我想额外拜托A做点别的事，A会发“？？？”回复我；当我谈A不感兴趣的话题，A会故意跳过不回复我。而这些A对我做的事情，其实A在之前全都自己做过，而我都给了友好回应。不知道这是我会倾向于讨好的别人造成的问题，还是A是只顾着自己的毒舌对外物毫无怜悯的问题。这两天我终于觉得受够了，用A同样的方式回应过去，原先很喜欢同我聊天的A，便渐渐沉默。而后，我的迷思出现了：</p>
-<ol>
-<li>如果一个人能够始终用自己的温柔包容对方，而对方予取予求，得寸进尺，而我本人越来越不开心，那我是不是应当有所反应？</li>
-<li>我的反应怎样才是最恰当的？<ol>
-<li>用对方可能没有意识到的自身糟糕态度回应，对方能不能意识到？我这样的回应动机，是不是出自于我的偏见，即每个人都应该有读空气、体察别人心情的时候？如果我在之前的谈话中没有表现出自己的厌恶和不适感呢？为什么别人没有通过我直接的言语表示，就必须承受我在后期无缘无故的恶意？</li>
-<li>我直接说自己感到不适好么？虽然这对于我是最难开口的事情，但不说，对方好像又意识不到。这一步的执行，最难的不是在于对方，而是在于我自己。而我经常由于“不好意思”等原因，跳过这一步去以同样“暴力”的方式对待别人，我是不是在人际互动中偷懒？可是有时候，你说出自己不喜欢对方怎样，反而对方又会觉得自己受到了指责，自尊心受伤。那么，我应该怎么去判定自尊心（这一步好像是在剖新自我，因为我也怕被别人表达“讨厌”）？</li>
-</ol>
-</li>
-<li>能找到一个什么都能聊得来的伙伴不容易，人首先应该看到优点，看到缺点尝试包容，假如出于自我内心，如果不能包容，就选择直接说出。真诚或许要比虚与委蛇简单很多。可是，纸上谈兵的东西，谁也不知道现实中究竟该如何。</li>
-</ol>
-<blockquote>
-<p>『温柔』这种特质，与任何宏大的东西不沾边，它恰好只是一种个体对个体的东西，谁也夺不走它，谁拥有它谁就光芒四射，谁感受到它谁就幸福无比，小瞧它的人迟早最终都会去寻找它，它的力量经常大到让人惊讶的地步。(@阅读兽ReadingCub)</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/13/My-New-Post-15/" data-id="clhvzvr8x000azkwj6ui7ctjd" data-title="2021年3月13日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%82%E5%AF%9F/" rel="tag">观察</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-14" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/12/My-New-Post-14/" class="article-date">
-  <time class="dt-published" datetime="2021-03-12T14:47:27.000Z" itemprop="datePublished">2021-03-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/12/My-New-Post-14/">2021年3月12日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>在进行的事不是很顺利。受到打击。嗨，人嘛，反正怪别人别人觉得你神经病，怪自己也觉得自己太短浅。最后只好说，看来当下不令我愉快是因为过去没有足够努力、没有抓住机会。顺便发现了，随着自己有了系统的社交体系，一个人的社交能力短板、上限、原生天赋很容易看得清，这时看到别人做事失败，反而会想：原来是因为这样才有了失败的表现啊。那就，努力让自己不要成为这样的人吧。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/12/My-New-Post-14/" data-id="clhvzvr8x0009zkwjf6kwgzr7" data-title="2021年3月12日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-13" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/11/My-New-Post-13/" class="article-date">
-  <time class="dt-published" datetime="2021-03-11T14:01:58.000Z" itemprop="datePublished">2021-03-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/11/My-New-Post-13/">2021年3月11日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>我是真的佛系追星，喜欢了千玺那么久，从未成年到成年，只B站有专门收藏他的剪辑……微博原号和转生号居然从没关注过他和他的超话。</p>
-<p>&amp;nbsp;</p>
-<p>微博阅读量一直在几百，偶尔浏览会发现有几条不过几十，没在意。某天未登录时翻找才知道，那些几十个阅读量的微博，往往是我字数写得最多，小心翼翼写成英文，最后仍然被新浪屏蔽的。只好自己默默转存了。于是会觉得审查真是无处不在，Neverland的歌词有什么不可言说之处吗？对于自由的看法有什么违背常理之处吗？唉，我讲不出想讲的话的时候，我便不是我了。</p>
-<p>&amp;nbsp;</p>
-<p>写好了2015年写知乎以来就想象过的东西。看私信时有些虚幻，又有些后悔。虽然自己并不是一个物欲横流的人，但偶尔会有几个瞬间会问自己，是不是没有足够用力抓住机会？我想是吧。可是在那个当下，又有谁能看得清楚自己的人生呢？</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/11/My-New-Post-13/" data-id="clhvzvr8w0006zkwjcdowcy20" data-title="2021年3月11日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-12" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/08/My-New-Post-12/" class="article-date">
-  <time class="dt-published" datetime="2021-03-08T15:04:34.000Z" itemprop="datePublished">2021-03-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/08/My-New-Post-12/">2021年3月8日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>哈哈哈哈哈哈哈今天我也太开心了！久违发图朋友圈！内眼线我爱你~</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/08/My-New-Post-12/" data-id="clhvzvr8v0005zkwjhm59e14i" data-title="2021年3月8日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-11" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/06/My-New-Post-11/" class="article-date">
-  <time class="dt-published" datetime="2021-03-06T04:48:03.000Z" itemprop="datePublished">2021-03-06</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/06/My-New-Post-11/">2021年3月6日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今日份打气：用喜欢的方式，把每一天都填满。🌺</p>
-<p>&amp;nbsp;</p>
-<p>我的写作前后稿：</p>
-<p>作家描写故事，哪怕态度再客观，也很难避免爱恨被读者察觉。比如<code>下沉年代</code>群像描写中，作家完美塑造了科林·鲍威尔；比如毛姆讥讽任何事物，唯独笔力饱满地刻画了苏巴郎。喷嚏无法隐藏，饿意无法隐藏，作家的偏爱也在句段停顿间陈露——情感，一样无法隐藏。</p>
-<blockquote>
-<p>[前稿]感觉每个作家哪怕再以客观和讥讽悲鸣的态度描写一段故事一段关于时代关于个人的故事也会不可避免被人察觉他们在这些群像描写中最喜欢谁比如下沉年代中的科林鲍威尔角色比如毛姆笔下的苏巴郎画家那种节制的崇敬和深刻的爱意会在每一次句子段落间停顿通过每个字段展现出来真是很奇妙的感觉啊。</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>我的写作前后稿：</p>
-<p>如何写出上乘的表达，原来不是天才唯属，只可意会的秘辛。过去我抱有错误的看法，还专门请教同学，某篇朋友圈是如何写出的？喜欢的作家对写作有无影响？没有得到可行答案。现在读<code>风格</code>才明白，固然有富兰克林那样的学习天才，我辈望尘莫及；但通过指南手册，普通人也能自我体察，弥补写作中的大部分缺陷。写作提升，道宽可行，相信日后我还能发现更多写作指南。</p>
-<blockquote>
-<p>[前稿]写东西的方法原来不是天才们只可意会的东西，因为就在不久之前我还问过大学同学她某一篇令我印象很深的朋友圈是怎么写出来的。后来看了风格才知道，原来还可以这样。那么接下来进步，还会有其他写作的好书能被我发现，学到吗？还是说只能模仿？</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>透过微博的一扇扇窗子看见他者的人生，这是互联网平台带给我们的礼物。从此，山高水远不再是阻碍，只要你想，随时可以串门海聊，这其间的快乐让我想起另一件事。读高中时，我因为想换新MP3在网上瞎逛，偶然发现一个私人博客，里面介绍了iPod Classical、Kindle。由于介绍生动实用，我看完便打开亚马逊下单。此后我也没有忘记这个博客，偶尔去看博主的日常，像看一位邻家姐姐。我搭建好私人博客那天，想到这位博主也曾为我打开一扇窗。如果没有她，我不会逐渐对博客感兴趣，也不会仅凭自己一腔热情，不放弃地搭建博客十几天。网络靠着小小一亩说话地，给予现代人互相交流的机会，人们独自倾诉、互相倾诉，见识几何数增长。这份美好，要在互联网时代体会了才知道。</p>
-<blockquote>
-<p>原来，这一千多个粉丝都是真人——各行各业，互不相识的年轻的人。他们同我一样偶然看见了这个用户，旁观了别人的人生，收获了生活的勇气，却从来不忍打扰，只在特定的时候出来相互祝福，“赛博新年串门子”。某种程度来讲，感谢微博。互联网为我们开了无数扇窗，天南海北的窗与窗相接了，每扇窗中能窥见一个人的半生。（@晋江_白羽摘雕弓）</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>发现我转发的微博博主，居然是我很喜欢的小说的作者，而且一翻她微博，还有新写的番外。也是，很多读过的古早文，随着互联网发展，其作者们不少也开通了微博，时不时上线新发几篇原文番外。我偶尔翻到会很开心，就像时隔很久的老友同我相见，也像平行世界主人公们遥寄告好，甜蜜溢满心头。陪我们走过青春期的故事，主角们好像永远活在不老的年代，依然幸福快乐地过着日子。最近拿了很多奖的<code>无依之地</code>的导演赵婷，记得也是写同人起家。写作、幻想、同人衍生的魅力，对于生活苍白而逐渐斗志消磨的凡人，真是无穷而又永远饱含希望啊。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/06/My-New-Post-11/" data-id="clhvzvr8u0004zkwjc3ozfoy9" data-title="2021年3月6日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/R%E8%AF%AD%E8%A8%80/">R语言</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C/">写作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8E%9F%E7%A5%9E/" rel="tag">原神</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E6%8A%80/" rel="tag">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%82%E5%AF%9F/" rel="tag">观察</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E7%AC%94/" rel="tag">读笔</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%98%85%E8%AF%BB/" rel="tag">阅读</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/NLP/" style="font-size: 10px;">NLP</a> <a href="/tags/%E5%86%99%E4%BD%9C/" style="font-size: 15px;">写作</a> <a href="/tags/%E5%8E%9F%E7%A5%9E/" style="font-size: 11.67px;">原神</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 13.33px;">学习</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" style="font-size: 18.33px;">社交媒体</a> <a href="/tags/%E7%A7%91%E6%8A%80/" style="font-size: 10px;">科技</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E8%A7%82%E5%AF%9F/" style="font-size: 11.67px;">观察</a> <a href="/tags/%E8%AF%BB%E7%AC%94/" style="font-size: 16.67px;">读笔</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 10px;">阅读</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/05/20/My-New-Post-31/">2021年6月9日</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/20/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/21/My-New-Post-43/">读笔 之 忧郁的热带（待整理完）</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/08/My-New-Post-42/">瑞克和辐射之后的思考</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/26/My-New-Post-41/">2021年8月26日</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+&amp;nbsp;
+最近在和一位老同学A聊天，因为我们都是对资本造星特别鄙夷，所以聊天时经常会有比较讽刺的话语。但令我惊讶的是，A天生的毒舌不仅限于在私聊时谈及他人，而且已经延伸到对同为谈话对象的我。比如，当我谈某些明星，A会用阴阳怪气的语气；当我想额外拜托A做点别的事，A会发“？？？”回复我；当我谈A不感兴趣的话题，A会故意跳过不回复我。而这些A对我做的事情，其实A在之前全都自己做过，而我都给了友好回应。不知道这是我会倾向于讨好的别人造成 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/12/My-New-Post-14/" title="2021年3月12日">2021年3月12日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-12T14:47:27.000Z" title="发表于 2021-03-12 22:47:27">2021-03-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">在进行的事不是很顺利。受到打击。嗨，人嘛，反正怪别人别人觉得你神经病，怪自己也觉得自己太短浅。最后只好说，看来当下不令我愉快是因为过去没有足够努力、没有抓住机会。顺便发现了，随着自己有了系统的社交体系，一个人的社交能力短板、上限、原生天赋很容易看得清，这时看到别人做事失败，反而会想：原来是因为这样才有了失败的表现啊。那就，努力让自己不要成为这样的人吧。
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Pekoe</div><div class="author-info__description">追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">一般会写人间百事、游戏见闻，偶尔转记一些不错的博客文字。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/18/My-New-Post-48/" title="五月见闻">五月见闻</a><time datetime="2023-05-18T07:17:17.000Z" title="发表于 2023-05-18 15:17:17">2023-05-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/17/My-New-Post-47/" title="四月见闻">四月见闻</a><time datetime="2023-05-17T07:17:17.000Z" title="发表于 2023-05-17 15:17:17">2023-05-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/16/My-New-Post-46/" title="三月见闻">三月见闻</a><time datetime="2023-05-16T07:17:17.000Z" title="发表于 2023-05-16 15:17:17">2023-05-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/15/My-New-Post-45/" title="二月见闻">二月见闻</a><time datetime="2023-05-15T07:17:17.000Z" title="发表于 2023-05-15 15:17:17">2023-05-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/14/My-New-Post-44/" title="一月见闻">一月见闻</a><time datetime="2023-05-14T07:17:17.000Z" title="发表于 2023-05-14 15:17:17">2023-05-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/R%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">R语言</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%86%99%E4%BD%9C/"><span class="card-category-list-name">写作</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">社媒日常</span><span class="card-category-list-count">35</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AF%BB%E7%AC%94/"><span class="card-category-list-name">读笔</span><span class="card-category-list-count">4</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%AF%BB%E7%AC%94/" style="font-size: 1.4em; color: rgb(134, 141, 137)">读笔</a><a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 1.25em; color: rgb(198, 31, 36)">学习</a><a href="/tags/%E5%86%99%E4%BD%9C/" style="font-size: 1.3em; color: rgb(156, 74, 166)">写作</a><a href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" style="font-size: 1.35em; color: rgb(193, 26, 108)">社交媒体</a><a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 1.45em; color: rgb(85, 17, 141)">日常</a><a href="/tags/%E8%A7%82%E5%AF%9F/" style="font-size: 1.2em; color: rgb(8, 116, 119)">观察</a><a href="/tags/%E7%A7%91%E6%8A%80/" style="font-size: 1.15em; color: rgb(10, 183, 14)">科技</a><a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 1.15em; color: rgb(138, 152, 135)">编程</a><a href="/tags/NLP/" style="font-size: 1.15em; color: rgb(49, 161, 31)">NLP</a><a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 1.15em; color: rgb(175, 25, 133)">阅读</a><a href="/tags/%E5%8E%9F%E7%A5%9E/" style="font-size: 1.2em; color: rgb(111, 185, 76)">原神</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">四月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">14</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-05-18T16:20:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-05-20T13:48:24.816Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Pekoe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div></div></body></html>

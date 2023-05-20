@@ -1,855 +1,251 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>宇宙庇护所 -  笑把金樽邀落日，绿杨城郭正春风。</title><meta name="author" content="Pekoe"><meta name="copyright" content="Pekoe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪">
+<meta property="og:type" content="website">
+<meta property="og:title" content="宇宙庇护所">
 <meta property="og:url" content="http://example.com/page/4/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="宇宙庇护所">
+<meta property="og:description" content="追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true">
+<meta property="article:author" content="Pekoe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/4/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '宇宙庇护所',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-05-20 21:48:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-My-New-Post-10" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/05/My-New-Post-10/" class="article-date">
-  <time class="dt-published" datetime="2021-03-05T09:58:45.000Z" itemprop="datePublished">2021-03-05</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%86%99%E4%BD%9C/">写作</a>
-  </div>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('https://images5.alphacoders.com/110/1107810.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="宇宙庇护所"><img class="site-icon" src="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true"/><span class="site-name">宇宙庇护所</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">宇宙庇护所</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/11/My-New-Post-13/" title="2021年3月11日">2021年3月11日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-11T14:01:58.000Z" title="发表于 2021-03-11 22:01:58">2021-03-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">我是真的佛系追星，喜欢了千玺那么久，从未成年到成年，只B站有专门收藏他的剪辑……微博原号和转生号居然从没关注过他和他的超话。
+&amp;nbsp;
+微博阅读量一直在几百，偶尔浏览会发现有几条不过几十，没在意。某天未登录时翻找才知道，那些几十个阅读量的微博，往往是我字数写得最多，小心翼翼写成英文，最后仍然被新浪屏蔽的。只好自己默默转存了。于是会觉得审查真是无处不在，Neverland的歌词有什么不可言说之处吗？对于自由的看法有什么违背常理之处吗？唉，我讲不出想讲的话的时候，我便不是我了。
+&amp;nbsp;
+写好了2015年写知乎以来就想象过的东西。看私信时有些虚幻，又有些后悔。虽然自己并不是一个物欲横流的人，但偶尔会有几个瞬间会问自己，是不是没有足够用力抓住机会？我想是吧。可是在那个当下，又有谁能看得清楚自己的人生呢？
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/08/My-New-Post-12/" title="2021年3月8日">2021年3月8日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-08T15:04:34.000Z" title="发表于 2021-03-08 23:04:34">2021-03-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">哈哈哈哈哈哈哈今天我也太开心了！久违发图朋友圈！内眼线我爱你~
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/06/My-New-Post-11/" title="2021年3月6日">2021年3月6日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-06T04:48:03.000Z" title="发表于 2021-03-06 12:48:03">2021-03-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%86%99%E4%BD%9C/">写作</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">今日份打气：用喜欢的方式，把每一天都填满。🌺
+&amp;nbsp;
+我的写作前后稿：
+作家描写故事，哪怕态度再客观，也很难避免爱恨被读者察觉。比如下沉年代群像描写中，作家完美塑造了科林·鲍威尔；比如毛姆讥讽任何事物，唯独笔力饱满地刻画了苏巴郎。喷嚏无法隐藏，饿意无法隐藏，作家的偏爱也在句段停顿间陈露——情感，一样无法隐藏。
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/05/My-New-Post-10/">读笔 之 写作指导手册（1）</a>
-    </h1>
-  
+[前稿]感觉每个作家哪怕再以客观和讥讽悲鸣的态度描写一段故事一段关于时代关于个人的故事也会不可避免被人察觉他们在这些群像描写中最喜欢谁比如下沉年代中的科林鲍威尔角色比如毛姆笔下的苏巴郎画家那种节制的崇敬和深刻的爱意会在每一次句子段落间停顿通过每个字段展现出来真是很奇妙的感觉啊。
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>最近读的两本书,<code>风格的要素</code>和<code>风格感觉</code>，都在讲一件事：如何让你的写作表达更好。最终这两本书的解决方案也大同小异：</p>
-<ol>
-<li>当心术语、缩略语和技术名词<ul>
-<li>用模糊语言做缓冲</li>
-<li>不要用强调等级词</li>
-<li>不要过多使用僵尸词</li>
-</ul>
-</li>
-<li>创造容易理解的树<ul>
-<li>避免向左分支的结构<code>反省：发现我自己经常使用向左分支的结构，比如——我比XX、XXXXXXX的人做得更好，当人们读完长长的限定修饰XXXXX后，还要把「人」和前面的「比」联系起来，导致向左回溯，反而增加了我写作和别人阅读的难度。</code></li>
-</ul>
-</li>
-<li>有逻辑地联系前后陈述<ul>
-<li>恰当使用连接词</li>
-<li>谨慎地运用否定</li>
-</ul>
-</li>
-<li>把文稿给读者和自己看</li>
-</ol>
-<p>如何看出一篇文章是否符合以上要求呢？下面是范文：</p>
-<blockquote>
-<p>李佳琦的经历<code>常</code>被解读<code>成</code>一种励志鸡汤：出身平凡，不懈努力，改写命运。<code>很</code>少有人意识到，这个27岁男孩的屏幕形象，<code>和</code>我们的消费习惯一样，都是一种被互联网算法筛选塑造的结果。这是一个有关算法和人的故事，“一个人，变<code>成</code>算法，现在又想回到人。”当李佳琦已经站在注意力的巅峰，他也<code>在</code>困惑，自己<code>到底</code>将<code>成</code>为谁。</p>
-<p>凌晨3点，火锅<code>还在</code>咕嘟咕嘟冒<code>着</code>泡，李佳琦没有<code>一点</code>困倦，<code>又</code>要<code>了</code>一瓶酒。</p>
-<p>头半夜，饭局一开始，他<code>就</code>叫了几瓶香槟。成名前李佳琦喜欢喝啤酒，<code>今年初</code>去巴黎，在法国娇兰总部参观<code>时</code>，一位老先生问他爱喝什么。<code>“Beer”，</code>他看到对方眼睛<code>里</code>很快闪烁<code>了</code>一丝不以为然。老先生说，你一定要试试香槟。</p>
-<p>“现在想，香槟碰杯的声音，确实比啤酒杯美妙<code>太多了</code>。”李佳琦的声音<code>低沉，放松，</code>语速是平时的一半。</p>
-<p>头一天，他<code>刚刚</code>结束当月的“心愿节”，<code>这是</code>李佳琦直播间自创的促销节日。<code>“所有女生，所有女生！”</code>整场直播李佳琦<code>都</code>保持一种高亢的声调，4小时17分钟内，他连续推销了48样产品，<code>那些</code>面膜、粉底液、办公室小零食3000件、5000件<code>地</code>上架，几十秒内<code>就</code>被网友抢购一空。</p>
-<p>此时此刻，在<code>这个</code>小别墅私密的火锅店包房<code>里</code>，李佳琦的声调<code>终于</code>恢复到<code>了</code>普通人的状态。“其实直播，我可以憋尿憋4个小时。”他主动提<code>起</code>头一晚自己中途几次去洗手间：“每次<code>都不是</code>小便，是去阳台放空。”</p>
-<p>人们点点头<code>：你压力太大了。</code></p>
-<p>餐桌对面，<code>是</code>一位知名艺术家和他的策展人朋友们。李佳琦<code>所在的</code>美ONE公司正在与他们策划一场展览，<code>以</code>李佳琦和口红<code>为</code>主题。几天前，策展人<code>刚</code>给李佳琦做<code>了</code>一场一对一的培训，讲<code>了</code>一小时“什么是艺术”。<code>这</code>顿晚餐<code>本想</code>随便聊聊，搜集一些素材，没想到一直吃到<code>了</code>后半夜。</p>
-<p>艺术家们模仿<code>起</code>李佳琦的口头禅，他们<code>判断，</code>27岁的李佳琦是消费主义时代的一种文化现象，大家聊<code>起</code>北上广几个著名商场每年大促的排队盛况<code>，相比之下，</code>李佳琦的定位<code>有些</code>尴尬：“<code>明明</code>个人销量已经超过一个单体商场，<code>但还是会</code>被说low，被人说吵、卖假货、没有作品。”（@熊阿姨）</p>
-</blockquote>
-<p>细观节选，作者节制使用等级词，避免模糊用词，避免过多否定，避免<code>进行+名词</code>等僵尸用法。文中很少使用连词，是因为作者的写作技术炉火纯青，语句移景十分娴熟，超越了既定的写作规则。这就是我下一阶段的写作目标了。</p>
+&amp;nbsp;
+我的写作前后稿：
+如何写出上乘的表达，原来不是天才唯属，只可意会的秘辛。过去我抱有错误的看法，还专门请教同学，某篇朋友圈是如何写出的？喜欢的作家对写作有无影响？没有得到可行答案。现在读风格才明白，固然有富兰克林那样的学习天才，我辈望尘莫及；但通过指南手册，普通人也能自我体察，弥补写作中的大部分缺陷。写作提升，道宽可行，相信日后我还能发现更多写作指南。
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/05/My-New-Post-10/" data-id="clhvzvr8n0000zkwjg4ch4f2k" data-title="读笔 之 写作指导手册（1）" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BB%E7%AC%94/" rel="tag">读笔</a></li></ul>
+[前稿]写 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/05/My-New-Post-10/" title="读笔 之 写作指导手册（1）">读笔 之 写作指导手册（1）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-05T09:58:45.000Z" title="发表于 2021-03-05 17:58:45">2021-03-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%86%99%E4%BD%9C/">写作</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%AF%BB%E7%AC%94/">读笔</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%86%99%E4%BD%9C/">写作</a></span></div><div class="content">最近读的两本书,风格的要素和风格感觉，都在讲一件事：如何让你的写作表达更好。最终这两本书的解决方案也大同小异：
 
-    </footer>
-  </div>
-  
-</article>
+当心术语、缩略语和技术名词
+用模糊语言做缓冲
+不要用强调等级词
+不要过多使用僵尸词
 
 
+创造容易理解的树
+避免向左分支的结构反省：发现我自己经常使用向左分支的结构，比如——我比XX、XXXXXXX的人做得更好，当人们读完长长的限定修饰XXXXX后，还要把「人」和前面的「比」联系起来，导致向左回溯，反而增加了我写作和别人阅读的难度。
 
-  
-    <article id="post-My-New-Post-9" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/05/My-New-Post-9/" class="article-date">
-  <time class="dt-published" datetime="2021-03-05T04:04:14.000Z" itemprop="datePublished">2021-03-05</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/05/My-New-Post-9/">2021年3月5日</a>
-    </h1>
-  
+有逻辑地联系前后陈述
+恰当使用连接词
+谨慎地运用否定
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一位朋友，兴趣爱好审美和我相似，独独性格不同。这位朋友去北京后，微信答复我寄的贺卡：「你好肉麻，我被嘲笑了」，恍然大悟，后来少有联系——对于我，情感需求的重要性胜过个体相似。再结交新朋友，不再在乎笑点不一样，生活习惯不一样，兴趣爱好不一样。也许是成长了，爱人的体恤胜过人的智慧。</p>
-<blockquote>
-<p>朋友的关系就像他们俩，什么都不为，没有具体的缘由，没有具体的目标，也没有具体的功能，只是出于单纯的好感，只是出于相遇相知的惊喜，只是出于相互愉悦的冲动。（@李银河）</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>翻印象笔记，回顾<code>邢波</code>的访谈，津津有味。因为对「人」的潜力很感兴趣，所以摘录了高亮段落：</p>
-<blockquote>
-<p>问：国内不少学生都想当您的学生，那您是如何挑选学生的呢？</p>
-<p>答：除了这些原因，还需要一些研究兴趣的匹配，以及研究之外的东西。我招学生的时候，可能会注重一个人的个人修养或人品——就是他&#x2F;她作为一个普通人的价值，而不仅仅是作为研究者所拥有的能力。研究方面的能力是可以培养的，无论是跟着我还是其他老师，学生的能力都一定会有提高。研究的起点不见得非要高，但是对学生的个人性格或修养有要求，我个人比较喜欢学生在我的组里产生正能量。更细致地话，我比较看重这四点，相信拥有以上四点的同学可以成为我组里很好的团队成员：</p>
-<ol>
-<li>有独立精神以及独立思考的能力。不是说我师兄师姐在做什么选题、最近最热是什么选题，我都去问问然后听从。敢于卓尔不群，坚持自己的观点；但同时也谦虚理性，而非顽固不化。</li>
-<li>要有一些理想主义。不是做每一件事都有一个精准的投资回报率，要有一些纯粹为了兴趣和爱好而努力、为了尽善尽美而下功夫的追求。享受过程，而不是苛求结果，把结果当成过程的副产品，有了很好、没有也不沮丧，这样才能真正享受过程。</li>
-<li>诚实而豁达。有一种简单、率真的性格，不能工于心计。</li>
-<li>知书达理，有良好教养，礼貌，易于也乐于和别人共事。</li>
-</ol>
-</blockquote>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/05/My-New-Post-9/" data-id="clhvzvr9j003hzkwj4gwacool" data-title="2021年3月5日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
+把文稿给读者和自己看
 
-    </footer>
-  </div>
-  
-</article>
+如何看出一篇文章是否符合以上要求呢？下面是范文：
 
+李佳琦的经历常被解读成一种励志鸡汤：出身平凡，不懈努力，改写命运。很少有人意识到，这个27岁男孩的屏幕形象，和我们的消费习惯一样，都是一种被互联网算法筛选塑造的结果。这是一个有关算法和人的故事，“一个人，变成算法，现在又想回到人。”当李佳琦已经站在注意力的巅峰，他也在困惑，自己到底将成为谁。
+凌晨3点，火锅还在咕嘟咕嘟冒着泡，李佳琦没有一点困倦，又要了一瓶酒。
+头半夜，饭局一开始，他就叫了几瓶香槟。成名前李佳琦 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/05/My-New-Post-9/" title="2021年3月5日">2021年3月5日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-05T04:04:14.000Z" title="发表于 2021-03-05 12:04:14">2021-03-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">一位朋友，兴趣爱好审美和我相似，独独性格不同。这位朋友去北京后，微信答复我寄的贺卡：「你好肉麻，我被嘲笑了」，恍然大悟，后来少有联系——对于我，情感需求的重要性胜过个体相似。再结交新朋友，不再在乎笑点不一样，生活习惯不一样，兴趣爱好不一样。也许是成长了，爱人的体恤胜过人的智慧。
 
+朋友的关系就像他们俩，什么都不为，没有具体的缘由，没有具体的目标，也没有具体的功能，只是出于单纯的好感，只是出于相遇相知的惊喜，只是出于相互愉悦的冲动。（@李银河）
 
-  
-    <article id="post-My-New-Post-8" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/02/My-New-Post-8/" class="article-date">
-  <time class="dt-published" datetime="2021-03-02T09:37:12.000Z" itemprop="datePublished">2021-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
+&amp;nbsp;
+翻印象笔记，回顾邢波的访谈，津津有味。因为对「人」的潜力很感兴趣，所以摘录了高亮段落：
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/02/My-New-Post-8/">2021年3月2日</a>
-    </h1>
-  
+问：国内不少学生都想当您的学生，那您是如何挑选学生的呢？
+答：除了这些原因，还需要一些研究兴趣的匹配，以及研究之外的东西。我招学生的时候，可能会注重一个人的个人修养或人品——就是他&#x2F;她作为一个普通人的价值，而不仅仅是作为研究者所拥有的能力。研究方面的能力是可以培养的，无论是跟着我还是其他老师，学生的能力都一定会有提高。研究的起点不见得非要高，但是对学生的个人性格或修养有要求，我个人比较喜欢学生在我的组里产生正能量。更细致地话 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/02/My-New-Post-8/" title="2021年3月2日">2021年3月2日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-02T09:37:12.000Z" title="发表于 2021-03-02 17:37:12">2021-03-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">这句话真有横冲直撞的灵性。
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这句话真有横冲直撞的灵性。</p>
-<blockquote>
-<p>之前看到一篇po文，教大家扔掉家裡東西，改善風水（風水命理這一套東西最高成就也只是財富和權力）。我認識很多最好的藝術家家裡都堆成山，什麼都捨不得丟，小蛋糕的紙吃完洗得乾乾淨淨用來畫畫，喝完茶包一片一片烘乾疊好。藝術其實沒有門檻也不需要天份，是太多人太捨得放棄自己熱愛事物的能力罷了 （@yingfeili）</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>讨厌一切洗脑、异化人的工具，包括数据、控评、反黑、氪金等等。好无聊。</p>
-<blockquote>
-<p>希望粉丝们明白，当一个博主觉得你的偶像的演技或者专业水平不够好，靠你们，是一丝一毫都扭转不了的。能扭转的，只有你偶像自己，靠ta的作品和能力，让对方改观。(@芸豆和雨豆)</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>哇！保存了木工坊的照片、飞机上看书的照片、Adidas大笑的照片、小王子和玫瑰的照片，保存了从老师、朋友到同学的采访，保存了写的文字和书单，「兴致盎然地与这世界交手」。就是这样偶尔看看千玺，发现又进步了，又学了新东西，又实现了愿望……好羡慕啊。一边羡慕，一边喜欢。</p>
-<blockquote>
-<p>2016.07-2021.03 用时56个月，20岁的@TFBOYS-易烊千玺 以28刊46封的成绩实现了国内主流十三刊封面满贯。(@BornForYEE易烊千玺)</p>
-</blockquote>
+之前看到一篇po文，教大家扔掉家裡東西，改善風水（風水命理這一套東西最高成就也只是財富和權力）。我認識很多最好的藝術家家裡都堆成山，什麼都捨不得丟，小蛋糕的紙吃完洗得乾乾淨淨用來畫畫，喝完茶包一片一片烘乾疊好。藝術其實沒有門檻也不需要天份，是太多人太捨得放棄自己熱愛事物的能力罷了 （@yingfeili）
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/02/My-New-Post-8/" data-id="clhvzvr9i003azkwj5cud3d8n" data-title="2021年3月2日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
+&amp;nbsp;
+讨厌一切洗脑、异化人的工具，包括数据、控评、反黑、氪金等等。好无聊。
 
-    </footer>
-  </div>
-  
-</article>
+希望粉丝们明白，当一个博主觉得你的偶像的演技或者专业水平不够好，靠你们，是一丝一毫都扭转不了的。能扭转的，只有你偶像自己，靠ta的作品和能力，让对方改观。(@芸豆和雨豆)
 
+&amp;nbsp;
+哇！保存了木工坊的照片、飞机上看书的照片、Adidas大笑的照片、小王子和玫瑰的照片，保存了从老师、朋友到同学的采访，保存了写的文字和书单，「兴致盎然地与这世界交手」。就是这样偶尔看看千玺，发现又进步了，又学了新东西，又实现了愿望……好羡慕啊。一边羡慕，一边喜欢。
 
+2016.07-2021.03 用时56个月，20岁的@TFBOYS-易烊千玺 以28刊46封的成绩实 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/03/02/My-New-Post-7/" title="读笔 之 下沉年代">读笔 之 下沉年代</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-02T07:50:41.000Z" title="发表于 2021-03-02 15:50:41">2021-03-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%AF%BB%E7%AC%94/">读笔</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">喜欢科林·鲍威尔和杰夫·康诺顿的两章，再来谈谈我的读后思考。首先，每个国度都有它的优缺点，而优缺点又如此殊途同归，甚至难以比较区别——没错，是华尔街和白宫的故事。其次，企业家在其中被谈及的很少，无可影射，无意间体现了熊彼特和德鲁克的倡导，企业家精神是社会支柱。最后，关于政治，此书可以和李光耀对话录比较：后者，对于如何高效治理国家，与西方世界观念相异，正是坦帕大众需要的——尽管，迷茫之中，他们从来不知道自己需要什么。
+&amp;nbsp;
+科林·鲍威尔节选：
 
-  
-    <article id="post-My-New-Post-7" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/02/My-New-Post-7/" class="article-date">
-  <time class="dt-published" datetime="2021-03-02T07:50:41.000Z" itemprop="datePublished">2021-03-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a>
-  </div>
+越过城市灯火，穿过共和国，矗立着构成战后中产阶级民主秩序的结构。
+种族歧视和越南战争都冒犯了他的民主价值观。“在越南的许多悲剧中，这种原始的阶级歧视最严重地伤害了所有美国人的理想：人人生而平等，并且对国家同等忠诚。”然而，他正在按照这一理想建立自己的生活，所以他仍然保持实用主义；他的自制几乎让他失去了人味儿。体制通过提升人们的品质来展示它们在健康运转，哪怕这些人偏离了道路，他们也能在自我纠正中找到最重要的力量。
+他本可能成为第一位黑人总统。相反，他从竞选中退出，自愿将时间花在贫困学校的贫困儿童身上。他传达的信息始终如一：勤奋、诚实 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/02/28/My-New-Post-6/" title="侃世 之 算法转行困局">侃世 之 算法转行困局</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-02-28T14:44:36.000Z" title="发表于 2021-02-28 22:44:36">2021-02-28</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%A7%82%E5%AF%9F/">观察</a></span></div><div class="content">今天看了一篇文章，感到：无论做什么都不容易，个人选择很重要。
+三十多岁就别转行做算法了
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/02/My-New-Post-7/">读笔 之 下沉年代</a>
-    </h1>
-  
+1. 算法行业误解有哪些？1.1 算法不等于人工智能像是我们在大公司里做推荐、搜索、广告以及NLP的工程师就更不算是人工智能了，顶多算是智能一些的算法。既不存在和用户的交互，我们也不是冲着智能这个方向去的，一切都是为了业务指标。
+1.2. 技术驱动是伪命题1.3. 工作内容并不有趣高端现实可能是每天都是数据、数据、数据，指标、指标、指标。
+前面说了，几乎所有的技术都是为了业务服务的，如果不能带来业务上的价值，那么这个部门被裁撤的日子也就不远了。既然如此，那么我们用算法做算法，目的也都是为了带动业务的增长，也就是业务指标的提升。那么我们要做的就是想尽办法带来提升。想要提升，就得有好模型，想要有好模型离不开好数据。
+不要迷信各种论文、金钥匙，只有数据才是核心。数据决定了效果的上限，模型不过是逼近这个上限罢了。数据一团糟用什么模型也不会有用。既然如此，那么我们每天要做的就是和各种枯燥的数字打交道，大量的时间花在了分析数据、清洗数据以及制作数据上。除此之外可能还有一些其他的脏活累活，并不比一般的开发轻松。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/02/28/My-New-Post-5/" title="读笔 之 李光耀论中国与世界">读笔 之 李光耀论中国与世界</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-02-28T10:11:03.000Z" title="发表于 2021-02-28 18:11:03">2021-02-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%AF%BB%E7%AC%94/">读笔</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">我比较同意的看法：
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>喜欢科林·鲍威尔和杰夫·康诺顿的两章，再来谈谈我的读后思考。首先，每个国度都有它的优缺点，而优缺点又如此殊途同归，甚至难以比较区别——没错，是华尔街和白宫的故事。其次，企业家在其中被谈及的很少，无可影射，无意间体现了熊彼特和德鲁克的倡导，企业家精神是社会支柱。最后，关于政治，此书可以和李光耀对话录比较：后者，对于如何高效治理国家，与西方世界观念相异，正是坦帕大众需要的——尽管，迷茫之中，他们从来不知道自己需要什么。</p>
-<p>&amp;nbsp;</p>
-<p><code>科林·鲍威尔</code>节选：</p>
-<blockquote>
-<p>越过城市灯火，穿过共和国，矗立着构成战后中产阶级民主秩序的结构。</p>
-<p>种族歧视和越南战争都冒犯了他的民主价值观。“在越南的许多悲剧中，这种原始的阶级歧视最严重地伤害了所有美国人的理想：人人生而平等，并且对国家同等忠诚。”然而，他正在按照这一理想建立自己的生活，所以他仍然保持实用主义；他的自制几乎让他失去了人味儿。体制通过提升人们的品质来展示它们在健康运转，哪怕这些人偏离了道路，他们也能在自我纠正中找到最重要的力量。</p>
-<p>他本可能成为第一位黑人总统。相反，他从竞选中退出，自愿将时间花在贫困学校的贫困儿童身上。他传达的信息始终如一：勤奋、诚实、勇敢、奉献。</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>还有褒贬意味浓厚的<code>罗伯特·鲁宾</code>：</p>
-<blockquote>
-<p>他一生都随身带着黄色拍纸簿，随时写下笔记和数字，分析不同结果的可能性，计算风险和预期价值。他发现自己对交易的兴趣是将其作为一种思考概率的练习。概率上的思考意味着他会将可能性极低的突发事件也考虑在内。套利交易的压力和波动让其他人因恐惧或贪婪而神经紧绷、一叶障目，但鲁宾始终能够轻松承受高风险交易的压力。他是一个可靠的商业人士，但他的人生目标并不在于赚钱——他明白，人们只能在自己内心寻求满足感——而且他的身份并不依赖于工作。这使他能够更清楚地思考风险。</p>
-<p>他有着长远的眼光，时刻记得一桩交易的结果在一百年后会变得无关紧要；虽然他很喜欢自己在体制中的角色，但他随时可以转身离开，走进一种不同的生活——坐在一家左岸咖啡馆阅读《北回归线》，谈论生命的意义，或是在云杉溪或火地岛飞蝇钓鱼。他的核心信念是没有什么可以被证明是确定的，所以他在不确定的市场世界中游刃有余。（他也是一个相当不错的扑克玩家。）这种哲学上的超脱使他成为一个令人惊讶的成功套利者。</p>
-<p>在椭圆形办公室或罗斯福厅的会议上，他并未竭力接近总统；他喜欢坐在远离主席位的座位上，观察房间里的人，然后隔着一段距离讲话。</p>
-<p>1999年，鲁宾回到纽约家中。他拿出黄色拍纸簿，开始草草写下关于下一步行动的问题，并在与亨利·基辛格和沃伦·巴菲特等人的谈话中做笔记。<code>读笔附注：拍纸簿——使想象付诸于实地的可能性杠杆产物，万能的执行工具。自我反省思路的审慎整理。让讲座谈话课程都成为笔下的学习档案。进步的加速器，清空烦忧脑袋的苕帚。</code></p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>作为政治漩涡中的正直人士，<code>杰夫·康诺顿</code>和考夫曼的心路，单枪匹马、艰苦卓绝，揭示了白宫为何无法掰倒华尔街：</p>
-<blockquote>
-<p>这些人都是各自领域的佼佼者，都聪明绝顶，受过最高的教育，都是民主党人，都与那场史诗般的失败有所牵连——现在，他们都受雇来清理废墟。他们曾与那些银行家一同学习，一同工作，一同吃喝，一同致富，他们又怎么可能与那些银行家有不同的视角呢？互相提携和利益冲突早已融入精英管治的灵魂。这个庞然大物是杀不死的。</p>
-<p>但那已是三十年前的事情了：这些年里，华盛顿已经被金钱的力量俘获。他也被俘获了；直到此刻，他才彻底理解，“影响力产业”——游说、媒体宣传、草尖[9]和旋转门——是如何改变了华盛顿。“当你回到政府时，你会意识到，它与公众利益之间的不对称变得多么严重。几乎没有人会走进你的办公室，试图告诉你公众的观点。”他开始把自己视为杰克·伯登，小说《国王的人马》中的叙述者，被政治玷污，对政治的幻想破灭。</p>
-<p>人性保持不变，但当金钱水涨船高，它就会以一千种微小的方式腐化人类的行为。“华盛顿改变了我。”他说，“如果它改变了我，那么它也必然改变了其他许多人。”</p>
-</blockquote>
-<blockquote>
-<p>康诺顿在罗素大楼的办公室里观看电视直播，他回想起这些年，自言自语道：“他很像拜登。”后来，康诺顿给考夫曼写了一张字条：“没有什么能比这更光荣了——在原则问题上作为唯一的反对声音站出来。”从那个冬天到2010年春天的几周，是康诺顿工作生涯中最紧张的一段时间。他在7点半抵达办公室，一直到晚上回家后还在工作；他会开着笔记本电脑阅读，直到午夜。他花了整整一个周末的时间，细读雷曼破产审查员长达两万页的报告，然后为考夫曼起草关于它的演讲。仿佛在这条路上一度离他而去的古老政治理念如今回归了——多年来的漂泊和挫折、那些为筹款而举办的早餐会和午后“快乐时光”、那种一点点变得妥协的感觉，一切都烟消云散了。他回到了塔斯卡卢萨的起点，投身世间最高尚的使命。</p>
-<p>那天晚上，考夫曼回到拉塞尔的办公室，康诺顿问他应该在新闻稿中加入什么。考夫曼只能挤出四个字：“我很失望。”他们知道法案注定要失败，但没想到会败得那么惨。短短几个小时里，首先闪电崩盘证明了他们是正确的，但紧接着他们就被“太大而不能倒”狠抽了几鞭。康诺顿内心的南方人对注定要失败的行动仍怀有浪漫的信念，他告诉职员：“有些东西值得我们为之奋斗。”</p>
-<p>“考夫曼参议员的任期，以及我作为参议院职员的时间，将在十二天后画上句号。”他总结道，“但这并不是一个参议员的斗争。这些问题涉及法治的基础和美国未来的经济成功。为了大众的利益，我希望你们能给出令人满意的回答。“</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>利益盘根错节，庞然大物高悬头顶，政客用言辞安抚公民，美国的一侧，华尔街闪闪发亮，西装革履；另一侧，人们看不到坦帕的未来。我不禁想，还能做什么呢？人类将会怎样？但马上，熊彼特的发言在我脑海里回响：经济学家的差异，通过意识形态体现，不自觉地与他们的科学愿景匹配。但是，时间的流逝终将消除意识形态的偏见，纠正错误。只要知识分子永远保持自由，一位经济学家的愿景，会被另一位经济学家中和。虽然经济学家不可避免受到意识形态的影响，但历史，终将力挽狂澜。</p>
-<blockquote>
-<p>熊彼特断定，意识形态愿景的持续存在是件好事，因为如果没有支撑学者努力工作的愿景，任何科学都不可能出现新进展。“通过这种行为，我们获得了科学研究的新材料，拥有了某种要阐明、捍卫和批判的主题。我们的论据和研究工具的存量在这一过程中会增长和更新。因此，尽管意识形态使我们步履缓慢，但如果没有它们，我们或许只能原地踏步。”</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>或许吧。时间会告诉一切。毕竟人类曾蜗居山洞，而现在，我们驶向星辰大海。</p>
+虽然儒家思想认为人性可以改良，但我一向认为人类就像动物一样，我不确定能否改良，但我认为可以进行训练，可以进行管教……你可以让一个习惯使用左手的人用右手写字，但你无法真正地改变其与生俱来的本能。
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/02/My-New-Post-7/" data-id="clhvzvr9i0037zkwjac8keu4b" data-title="读笔 之 下沉年代" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BB%E7%AC%94/" rel="tag">读笔</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
+人的思想不只来自阅读，你可以从书本中获取，但如果你不把书本知识同自己的情况结合起来，书本知识就无用武之地。我自己经常会把读到的东西同自身情况结合起来……同博学多才的人展开讨论具有重要的意义，这一点一定不要忽略，我认为这比单纯孜孜不倦地阅读文献强得多。因为通过短暂的交流，你就能萃取对方的知识和对方的思想精华。
 
 
-
-  
-    <article id="post-My-New-Post-6" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/02/28/My-New-Post-6/" class="article-date">
-  <time class="dt-published" datetime="2021-02-28T14:44:36.000Z" itemprop="datePublished">2021-02-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/28/My-New-Post-6/">侃世 之 算法转行困局</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今天看了一篇文章，感到：无论做什么都不容易，个人选择很重要。</p>
-<h2 id="三十多岁就别转行做算法了"><a href="#三十多岁就别转行做算法了" class="headerlink" title="三十多岁就别转行做算法了"></a><center>三十多岁就别转行做算法了<center/></h2><blockquote>
-
-<h3 id="1-算法行业误解有哪些？"><a href="#1-算法行业误解有哪些？" class="headerlink" title="1. 算法行业误解有哪些？"></a>1. 算法行业误解有哪些？</h3><h4 id="1-1-算法不等于人工智能"><a href="#1-1-算法不等于人工智能" class="headerlink" title="1.1 算法不等于人工智能"></a>1.1 算法不等于人工智能</h4><p>像是我们在大公司里做推荐、搜索、广告以及NLP的工程师就更不算是人工智能了，顶多算是智能一些的算法。既不存在和用户的交互，我们也不是冲着智能这个方向去的，一切都是为了业务指标。</p>
-<h4 id="1-2-技术驱动是伪命题"><a href="#1-2-技术驱动是伪命题" class="headerlink" title="1.2. 技术驱动是伪命题"></a>1.2. 技术驱动是伪命题</h4><h4 id="1-3-工作内容并不有趣高端"><a href="#1-3-工作内容并不有趣高端" class="headerlink" title="1.3. 工作内容并不有趣高端"></a>1.3. 工作内容并不有趣高端</h4><p>现实可能是每天都是数据、数据、数据，指标、指标、指标。</p>
-<p>前面说了，几乎所有的技术都是为了业务服务的，如果不能带来业务上的价值，那么这个部门被裁撤的日子也就不远了。既然如此，那么我们用算法做算法，目的也都是为了带动业务的增长，也就是业务指标的提升。那么我们要做的就是想尽办法带来提升。想要提升，就得有好模型，想要有好模型离不开好数据。</p>
-<p>不要迷信各种论文、金钥匙，只有数据才是核心。数据决定了效果的上限，模型不过是逼近这个上限罢了。数据一团糟用什么模型也不会有用。既然如此，那么我们每天要做的就是和各种枯燥的数字打交道，大量的时间花在了分析数据、清洗数据以及制作数据上。除此之外可能还有一些其他的脏活累活，并不比一般的开发轻松。</p>
-<p>另外，对于开发而言，他们所作的事情是看得见摸得着，结果可以预期的。我做了一个功能，如果没有bug，它就是这个功能。但算法不一样，我们所有的工作都基于我们的推论之上，我们觉得这个模型或者是这份特征可能有用，但是实际情况无从预见。很有可能花了很多精力到头来一场空，所以压力并不小某种程度上反而更大。</p>
-<h4 id="1-4-职场内卷现况"><a href="#1-4-职场内卷现况" class="headerlink" title="1.4. 职场内卷现况"></a>1.4. 职场内卷现况</h4><h4 id="1-5-职场人群分析"><a href="#1-5-职场人群分析" class="headerlink" title="1.5. 职场人群分析"></a>1.5. 职场人群分析</h4><p>所以我们简单总结一下，第一梯队应该是本科有过acm获奖经历，硕士申请到了不错的学校，并且在学校当中有不错表现以及论文的同学。不过这些人也不多，全国一年acm银奖以上也就一千人左右，加上折损淘汰率，可能算下来全国也就几百人，非常非常少。第二梯队是名校学历+优秀论文，这种组合也很难得，我估计在从业者中最多也就30%。第三梯队是有竞赛获奖经历&#x2F;大厂实习经历的优秀本科生以及学历偏弱有不错论文或者是论文偏弱学历不错的硕士，这群人构成了算法从业者的大头，中坚力量。但第三梯队的人数最多，竞争应该也是最大的，大家情况差不多的时候基本上就完全看个人能力了。</p>
-<h3 id="2-剩下的问题是怎么努力，往哪里努力？"><a href="#2-剩下的问题是怎么努力，往哪里努力？" class="headerlink" title="2.剩下的问题是怎么努力，往哪里努力？"></a>2.剩下的问题是怎么努力，往哪里努力？</h3><h4 id="2-1-打好基础"><a href="#2-1-打好基础" class="headerlink" title="2.1. 打好基础"></a>2.1. 打好基础</h4><p>我给出的建议是打好基础+做出亮点，算法行业的基础无非是算法+数据结构+机器学习+深度学习。这几块每一块都不小，想要从零开始啃下来非常不容易。这也是为什么acm出身的同学有优势的原因，因为他们已经熟练掌握了算法和数据结构，不仅负担更小，并且对于继续学习后续的机器学习以及深度学习也有帮助。</p>
-<p>我个人的建议是大量刷题快速学习，大部分人学算法和数据结构都是为了应付面试。既然如此，那不如索性不用学了，直接上手刷题，在刷题的过程当中学。把学习的时间省下来把LeetCode前300题刷个4遍，把里面涉及到的所有算法都学会练熟悉。这些都是机械操作，考验的就是毅力和苦功，没什么太多的技术含量，国外的留学生找工作也都是这么过来的。</p>
-<p>机器学习和深度学习难点在于刚入门的时候，刚入门的时候什么都不懂，什么概念都是新鲜的，尤其是还会涉及很多公式推导。但实际上公式推导只涉及简单的线性代数以及矩阵运算，只是看着唬人。机器学习和深度学习里面具体的技术点也并不多，尤其是深度学习大部分都是围绕神经网络展开的各种奇淫技巧。主要难熬的是刚入门的前几个月，挺过去会好很多。</p>
-<p>最后说说做出亮点，说到亮点很多人会想到kaggle或者是其他的一些比赛。我个人觉得这些比赛参加一两场熟悉一下，理解一下算法是怎么运作的就可以了，没有必要非要做出成绩来。因为kaggle这类比赛用到的技术以及能力和实际工作当中还是有很大差别的，并且现在这些比赛也卷得厉害。里面卷着的基本上都是一些小型的人工智能企业，他们雇一些全职的员工来刷比赛，用这些比赛的名次来证明公司的能力。所以想要单枪匹马赢过这些公司非常不容易，也需要花费大量的时间，所以我个人不是很推荐。</p>
-<h4 id="2-2-读论文"><a href="#2-2-读论文" class="headerlink" title="2.2. 读论文"></a>2.2. 读论文</h4><p>我觉得比较好的办法还是从论文下手，把相关业内的论文读一读，积累一点造诣。</p>
-<p>对于刚入行的同学来说上来就读paper是一件比较痛苦的事情，第一个难点是不知道要读什么，paper这么多，每一篇都读过来显然没有精力，也没有这个必要。好在现在互联网非常发达，我们在网上找一找大牛的博客和指引，可以找到一堆reading list。第二个难点是本身的阅读难度，毕竟是全英文，再加上又有各种公式，刚开始会比较痛苦这个是肯定的。我个人建议是先硬啃几篇下来，然后记录一下读不懂的地方，再去找一找网上中文的博客和解析来做一个对比。十来篇论文看下来，你会发现这件事情会一下子变得没有那么难了。</p>
-<p>这里要注意，我们读论文是要摸清楚在这个领域当中的套路，而不是死板地记录论文当中的方法或者是技术。到后来当你找到自己的方法论之后，你会发现读论文变得非常快。看个摘要，再看个图例，读一些描述基本上就差不多了。到这个地步，从理论上来说已经是专家了，可能实践上还需要积累一些经验，但至少应付面试找份工作问题就不大了。</p>
-<p>但其实，人人都说算法好，人工智能强，其实真的也就那么回事，依然是辛苦忙碌的打工人，和其他普通程序员并没有什么高下之分。</p>
-<p>即使现实一些从收入上来看，也并没有比前端、后端、客户端那些纯开发的程序员多。而且这个行当也不是所有人都合适，除了需要保持持续学习之外，还需要涉猎很广，除了算法本身对于后端、大数据、分布式、系统设计都需要有所了解和涉猎，难度和压力都不小。所以如果已经在互联网行业当中做上程序员了，真没多大必要非要换方向，有点吃力不讨好。能轻松一点，何必卷着呢，对吧。</p>
-<blockquote/>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/28/My-New-Post-6/" data-id="clhvzvr9h0033zkwj2hpw2eer" data-title="侃世 之 算法转行困局" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%82%E5%AF%9F/" rel="tag">观察</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-5" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/02/28/My-New-Post-5/" class="article-date">
-  <time class="dt-published" datetime="2021-02-28T10:11:03.000Z" itemprop="datePublished">2021-02-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/28/My-New-Post-5/">读笔 之 李光耀论中国与世界</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>我比较同意的看法：</p>
-<blockquote>
-<p>虽然儒家思想认为人性可以改良，但我一向认为人类就像动物一样，我不确定能否改良，但我认为可以进行训练，可以进行管教……你可以让一个习惯使用左手的人用右手写字，但你无法真正地改变其与生俱来的本能。</p>
-</blockquote>
-<blockquote>
-<p>人的思想不只来自阅读，你可以从书本中获取，但如果你不把书本知识同自己的情况结合起来，书本知识就无用武之地。我自己经常会把读到的东西同自身情况结合起来……同博学多才的人展开讨论具有重要的意义，这一点一定不要忽略，我认为这比单纯孜孜不倦地阅读文献强得多。因为通过短暂的交流，你就能萃取对方的知识和对方的思想精华。</p>
-</blockquote>
-<blockquote>
-<p>自1973年以来，我学到了什么呢？我学到了一些关于人类与人类社会的更加基本的、永恒的道理，学到了如何让人类和人类社会实现更好的发展，学到了倒退和崩溃的风险是永远存在的……我意识到了一个文明社会是何等脆弱……我还明白了个人成就的重要意义。在50多岁、将近60岁时，我意识到，同知识、道德和精神上的满足相比，尘世的一切荣耀与成功都是转瞬即逝的，一切感官上的愉悦和快乐都是短暂的……<br>我不禁开始怀疑我所拥有的东西中有多少是先天决定的，又有多少是后天培养的。如果我没有经历过艰难抗争的考验，我会与现在的自己有所不同吗？做出了一个个生死攸关的抉择，经历了一次次重大的危机，我的眼光、雄心和辨别轻重缓急的能力都发生了根本性变化，我相信这种变化将对我产生深远的影响。也许所谓的“硬件”（即我的身体、精神和情绪）并没有什么变化，但我的“软件”（也就是我对上帝、荣耀或金钱的看法）已经受到了人生阅历的深刻影响。换句话说，无论“硬件”（由先天决定）多么好，没有“软件”（靠后天培养），“硬件”也不会有多大的用武之地。</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/28/My-New-Post-5/" data-id="clhvzvr9g002wzkwj0dnrbfdj" data-title="读笔 之 李光耀论中国与世界" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BB%E7%AC%94/" rel="tag">读笔</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-4" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/02/27/My-New-Post-4/" class="article-date">
-  <time class="dt-published" datetime="2021-02-27T09:41:51.000Z" itemprop="datePublished">2021-02-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/27/My-New-Post-4/">2021年2月27日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今天看《旺达幻视》，一口气追完。第八集时意识到，原来人无法真正理解别人的处境。前几集里旺达说，她童年悲惨，我没有什么感觉。直到她的童年在女巫魔法下昨日重现，栩栩如生——爆炸像一瞬间的黑暗，她在尘砾中醒来，灰头土脸。回头寻找，却发现双亲已经离开。当今战乱地区的孩子，他们的记忆又是如何；当他们长大，假如有幸生活在和平中，童年的痛苦是否会像梦魇，在不为人知的深夜向着自己袭来；当他们和别人讲述从前，被回应“我很同情你”，又会真的感到安慰吗？——独自承受的记忆，像武汉封城后为母亲敲锣求救的女孩，别人只有「道听途说」，语言学里的「所指」，在哲学意义上，好像永远无法到达了。记忆，由个体保存、讲述、转播，穿越时光，飞向无垠大地，却只是重重隔隔的幻影，无法和过去拥抱、接近。这样看来，「面对苦难」，本质还是伪命题。</p>
-<p>正值227一周年，又来发文删帖封话题，令人火大，那就继续抵制吧。另外，有博主发的视频，截止到今年2月28日，已经被删两次：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1HE411T7nS?from=search&seid=7718248716681740170">同人的意义是什么</a>，还有博主说：「不止是「偶像失声」，你和你的团队删帖、封号、炸话题也让别人失声，而这一切都发生在你这篇文章里称自己在反思挣扎的时间段里，而直到今天，你仍然没有停止。」（@罐头辰）</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/27/My-New-Post-4/" data-id="clhvzvr9d002fzkwj329y81k8" data-title="2021年2月27日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/02/26/My-New-Post-3/" class="article-date">
-  <time class="dt-published" datetime="2021-02-25T16:56:35.000Z" itemprop="datePublished">2021-02-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/26/My-New-Post-3/">2021年2月26日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>颜宁老师好严谨，我第一次遇到这情况：复制博文，放进Markdown文档，马上出现对应格式。细看，标点后打了空格，好佩服。而且，她讲的写作指导有借鉴意义。</p>
-<blockquote>
-<p>这两天给很能干的博后改论文，忍不住电话打过去教育了一下：</p>
-<ol>
-<li>作为实验者，对于过程、数据心知肚明，所以写什么都觉得很明白；但是读者作为受众是不一样的，毫无重点面面俱到的文章，你以为是信息量巨大，但其实给了读者很多噪音；所以写文章一定要想明白这个工作在领域内的地位–本领域的问题何在，你的工作发现了什么解决了什么对领域的推动点在哪里？然后突出这个重点；</li>
-<li>写论文最重要的是逻辑线，这与英文还是中文无关，关键是逻辑是否流畅；</li>
-<li>关于语言，作为非母语确实难以写出文采，但论文写多了本质就是八股，对精准的要求远大于文采。话虽如此，如果写的漂亮，也赏心悦目不是。可以通过留心阅读别人的论文提高文采啊。不能抄袭，但可以借鉴别人在类似情况下的用词啊。我之前就说过，对比施老师我自愧弗如的一条就是他总是让学生在旁边看着他修改论文（这对于写着写着玩下微博微信看看娱乐新闻的某人来说那是无法接受滴），我当学生博后的时候最关注的就是他为什么要换这个词，为什么要这么改，这种习惯变成了读别人论文的时候看到一个很惊艳的词就记下来，自己可能不由自主就用出来了。而且如果你系统读一些人的论文，会意识到ta们的用词习惯。对于非母语写作，多读多记多练，日积月累，进步就显出来了。（@nyouyou）</li>
-</ol>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>学到两点：「科学新闻」有趣、保持自己对研究领域的了解。</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://weibo.com/ttarticle/p/show?id=2309404607321065259438">施一公：学生如何提高专业英文阅读能力丨传道受业</a><br>与《细胞》(Cell)、《生物化学期刊》（JBC）等非常专业的期刊不同，《科学》和《自然》里面有相当一部分内容是用来做科普教育的。《科学》周刊的“Perspectives”和《自然》周刊的“News &amp; Views”栏目都是对重要科学论文的深入浅出的介绍，一般1-3页，读起来比较通俗易懂，较易入门。读完这些文章后，再读原始的科学论文，感觉好多了！而且可以把自己的体会与专家的分析比较一下，找找差距，有时甚至也能找回来一点自信！</p>
-<ol>
-<li>请每位学生每周关注《科学》和《自然》。（生命科学界的学生还应该留心《细胞》）。如果时间有限，每周花一个小时读读这两种周刊里的文章标题以及与自己研究领域相关的科研论文的abstract，即可！这样做可以保证一个学生基本上能够跟踪本领域最重要的发现和进展，同时开阔视野，大概知道其它领域的动态。</li>
-<li>在时间充足的情况下，可以细读《科学》和《自然》里的新闻及科研论文。如果该科研论文有“News &amp; Views”或“Perspectives”来介绍，请先读这些文章，这类导读的文章会提炼问题，就好比是老师事先给学生讲解一番论文的来龙去脉，对学生阅读原始论文有很大帮助。</li>
-</ol>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/26/My-New-Post-3/" data-id="clhvzvr96001czkwj0evsddm7" data-title="2021年2月26日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/02/25/My-New-Post-2/" class="article-date">
-  <time class="dt-published" datetime="2021-02-25T08:50:37.000Z" itemprop="datePublished">2021-02-25</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/25/My-New-Post-2/">2021年2月25日</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>&amp;nbsp;</p>
-<p>科技发展造福人类之:<br>1.午睡用的<code>潮汐</code>软件，设定小憩半小时，听着冥想类音乐入睡，缓缓醒来好幸福。🤣<br>2.最近新剧「山河令」很火，有同学和我说真香，我没看剧，去B站看了主角混剪，发现打戏和光影确实不错，加上今天还看到明代生活复原视频，心里更充满希望了：随着科技大众化，视频制作技术下沉，内容分发渠道多样化，更多人不再从单一媒体被动接受信息；赚取眼球的渠道，也不再依赖大明星大导演。作为普通人的我们，终于能够接触到不同层次的艺术作品，选择自己所爱。想必低劣的流量作品，将来也不得不让位给精良制作，流量之苦或能式微——低质艺术，终于不必再毒害消费者眼球了。</p>
-<p>&amp;nbsp;</p>
-<p>我好喜欢这部短影片，它呈现了明代女性的互助，温情而还原，最后的配乐合着影绰的灯影，人间再无女性的忧虑。</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Pf4y167qt">辛丑年新春特辑·上元竹枝词 </a><br>本次的故事发生在嘉靖后期的福州府，元宵节前夕，四位年轻妇人的一次小聚催生了诸多琐事，笼罩在何淑官身上的阴霾终究消散在华灯火树之中。明代福州的元宵节盛况远胜于前朝，时称「 天下上元灯烛之盛，无逾闽中者。」虽财力有限，片中所能展现的场景也仅是零光片羽，但光影之间皆是我们对「 满城灯市荡春烟 」之全力想象。</p>
-</blockquote>
-<p>&amp;nbsp;</p>
-<p>被感动到了。行胜于言，善良，热爱烟火气，享受木工爱好，喜欢听老歌，在夜晚的航班上也开小灯看书的男孩，虽然做了大明星，但这几年，我看着他，不自觉地，总把他当成生活里标杆式的普通人。喜欢这样的明星是什么感受呢？大概是像喜欢一位有共同语言的朋友，对他没有什么壮业要求，只希望他能自由过一生，愉快、健康，偶尔交流交流。谈天说地的场景，也多半是「夜雨剪春韭，新炊间黄粱」，雨落在梁檐，滴滴答答，大家举杯，说着永远真心的话。</p>
-<blockquote>
-<p>易烊千玺昨天那<a target="_blank" rel="noopener" href="https://weibo.com/3623353053/K3gTckyIf">一段视频</a>挺好看的，麻辣烫，隐约听到“肥肠是必点的”。坐345快回昌平，买一袋盐酥鸡，“再也没有这种小门店卖这么酥这么脆的盐酥鸡了”，这男孩挺好。还有公车上背景音乐是林依轮《爱情鸟》，我小时候在小姨家偷过这盒磁带。（@用户Gongshu）<br>评论区：</p>
-<ul>
-<li>BGM是他翻唱的爱情鸟，收录在翻唱专辑《后座剧场》里，唱了他小时候坐公交经常听的六首老歌。</li>
-<li>其实bgm都是千玺翻唱专辑《后座剧场》的歌（选曲是他小时候坐公交后座常听的歌 qq音乐有）</li>
-<li>很久以来上班儿（大明星觉得拍戏 代言广告 拍杂志就是上班儿和咱们去办公楼上班儿一样，社会分工不同而已）就坐公交地铁 ，一次都没被认出来，自己还挺得意！他真的想好好做演员，不要高高在上，把自己当明星和平常人隔离开。国内年轻一代的艺人有这种心境并能自己掌控生活的人太稀少了。</li>
-<li>很真实记录着自己尚平凡的那六年，把每一个点开的人当作朋友一样的语气，感觉有被好好善待。</li>
-<li>“再见”，还真给人一种我们还会再见的感觉。</li>
-<li>会享受生活的小细节，会保有对平常生活过去的遗憾。细嗅蔷薇的人总是有诗意的。</li>
-<li>他是我心里的珍稀动物。</li>
-</ul>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/25/My-New-Post-2/" data-id="clhvzvr94000xzkwjewax7f0h" data-title="2021年2月25日" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A7%91%E6%8A%80/" rel="tag">科技</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-New-Post-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/02/24/My-New-Post-1/" class="article-date">
-  <time class="dt-published" datetime="2021-02-24T09:45:11.000Z" itemprop="datePublished">2021-02-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/24/My-New-Post-1/">读笔 之 刻意练习：如何从新手到大师</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="1-边干边学（情景学习）的重要性"><a href="#1-边干边学（情景学习）的重要性" class="headerlink" title="1.边干边学（情景学习）的重要性"></a>1.边干边学（情景学习）的重要性</h1><p>&amp;nbsp;</p>
-<blockquote>
-<p>“仍然是西蒙，他认为人的“有限理性”体现在学习中就是“情境理性”——在哪里用，就在哪里学。人的学习受到情境的制约或促进。你要学习的东西将实际应用在什么情境中，那么你就应该在什么样的情境中学习这些东西。 比如，你要学习编程，就应该在GitHub里学习，因为你以后编程就是通过GitHub。又如，你要学习讨价还价的技巧，就应该在实际的销售场合学习，因为这一技巧最终是用在销售场合中的。”<br>“刻意练习并没有否认情境的重要性，但是在一些畅销书中，那些已经被学习科学证实的主流方式被放在一个不起眼的角落。与学习密切相关的隐性知识被忽略了。学习科学大量研究表明，成人的最佳学习方式并非独自练习，而是在情境中学习。 有效学习是进入相关情境，找到自己的“学习共同体”，学习者最开始时围绕重要成员转，做一些外围的工作，随着技能增长，进入学习共同体圈子的核心，逐步做更重要的工作，最终成为专家。”</p>
-</blockquote>
-<h2 id="1-1-情景学习的要点"><a href="#1-1-情景学习的要点" class="headerlink" title="1.1.情景学习的要点"></a>1.1.情景学习的要点</h2><blockquote>
-<p>“这就是学习科学日益主流的观念：从“情境学习”出发，当一名“认知学徒”，它的要点有以下几个:</p>
-<ul>
-<li>找到学习共同体：因为大量知识存在于学习共同体的实践中，不是在书本中，所以有效的学习不是关门苦练，而是找到属于自己的学习小团体。如程序员在类似于GitHub这样的网站练习编程。</li>
-<li>隐性知识显性化：隐性知识是使人们有能力利用概念、事实以及程序来解决现实问题的知识。一般也被称为策略知识。</li>
-<li>模仿榜样：榜样可以是现实生活中的导师，也可以是网上的导师。”</li>
-<li>培养多样性：在多种情境中实践，以此强调学习广阔的应用范围。例如，裁缝出师并不是已经练习了1万小时，而是能够缝制出足够好的衣服。”</li>
-</ul>
-</blockquote>
-<h2 id="1-2-音乐训练与大脑改变"><a href="#1-2-音乐训练与大脑改变" class="headerlink" title="1.2.音乐训练与大脑改变"></a>1.2.音乐训练与大脑改变</h2><blockquote>
-<p>“科学家不能确定地说完美音高究竟是不是一种天生才能，但他们知道，如果它是一种天才的话，那么，只有在孩提时代就接受了某些音高训练的人之中，才有可能显现出来。换句话讲，它可能是那种“长期不用便会作废”的才华。甚至那些幸运地拥有完美音高这种才华的人，也必须做某些事情，才能不断发展这种才华，特别是在年幼时接受某种音乐训练。现在我们知道，也并非这么回事。”<br>“但是，自20世纪90年代以来，研究大脑的研究人员开始意识到，大脑（甚至是成年人的大脑）比我们想象的具有更强的适应能力，这使得我们可以在很大程度上控制大脑能做的事情。特别是，大脑采用以各种方法“重新布线”的方式，对适当的触发因子做出响应。神经元之间构成了新的连接，同时，现有的连接要么得到强化，要么被弱化，在大脑的某些部分之中，甚至还可能生长新的神经元。这种适应能力，解释了榊原彩子的研究对象以及莫扎特怎样培育和提升完美音高：他们的大脑通过发展特定的、能够拥有完美音高的回路，对音乐训练做出响应。迄今为止，我们尚不能辨别那些回路都是些什么回路，也不能说它们看起来是什么样子，或者它们到底在做些什么，但我们知道，它们一定在那里，而且知道，它们是训练的产物，并不是某些天生的基因。”<br>“某种程度上，各种各样的练习都可能有效，但其中一种特殊的形式则是黄金标准，我在20世纪90年代初期称之为“刻意练习”。这是我们知道的最有效和最强大的练习形式，而且，对刻意练习原则的运用，是为任何行业或领域策划和设计训练方法的最佳方式。”<br>“这种反馈可能是内部反馈，比如满足于看到你自己在某件事上的水平提高，也可能是由其他人提出的外部反馈，但它们对某个人是否能够在有目的的练习过程中坚持不懈地努力以提高自己的水平十分重要。”<br>“另一个因素是：史蒂夫乐于挑战自己。从他以前参加过越野赛跑，而且是田径赛场上的活跃参与者，便可明显看出。所有认识他的人都会告诉你，他只要一参加训练，就会和别人一样刻苦，但他的这种动机，只是为了提高自己的表现，并不一定是为了赢得比赛。此外，他从自己多年的奔跑经历中了解到，定期的训练，一周接一周、一月接一月的训练意味着可以有效地提高表现，而且，对他来说，每周三次、每次只进行一小时训练，也不是一件格外艰难的任务，因为他经常参加长达三小时的跑步。后来，在结束了与史蒂夫和其他一些学生的记忆研究之后，我只招聘一类研究对象：运动员、舞蹈家、音乐家或歌手等曾接受过大量培训的人。他们中没有人中途退出实验。”</p>
-</blockquote>
-<h2 id="1-3-大脑改变与心理结构的构建"><a href="#1-3-大脑改变与心理结构的构建" class="headerlink" title="1.3.大脑改变与心理结构的构建"></a>1.3.大脑改变与心理结构的构建</h2><blockquote>
-<p>“正如我们将会看到的那样，改进几乎各种类型的心理表现，至关重要的是心理结构的构建，这样便可以避免短时记忆的局限，并且马上就能高效地处理大量信息。史蒂夫做到了这一点。”</p>
-</blockquote>
-<blockquote>
-<p>“越来越多的证据表明，大脑的结构与运行都会为了应对各种不同的心理训练而改变，而且，很大程度上像你的肌肉和心血管系统响应体育锻炼那样。上述这种观点，与下面这种观点密切相关：个人在能力上的差别，主要由大脑“布线”的不同而导致，它是由遗传基因决定的，而学习，只不过是发挥某人遗传潜能的一种方式而已。相反，这些改进是由他们大脑中某些部位的改变引起的，这些部位负责解读来自眼睛的视觉信号。尽管研究人员并没有准确地指出这些改变到底是什么，但他们认为，研究对象的大脑学会了对图片“去模糊”。人们看图片模糊，是由两种不同的视觉缺陷共同引起的，一是无法看清微小的细节，二是难以察觉对比度中的差别。开展这项研究的研究人员认为，他们的训练教会了研究对象的大脑对视觉信号进行更好的处理，这反过来使研究对象能辨别更加细微的细节，不需要改善来自眼睛本身的信号。”<br>这就是体育锻炼制造身体变化的一般模式。当身体的系统（比如某些肌肉、心血管系统或者其他系统）感受到压力，以至于原来的体内平衡无法继续保持下去时，身体便会开始响应那些变化，目的是重新建立体内平衡。比如，假设你开始执行一个有氧运动的计划，如每周慢跑三次，每次跑半个小时，使你的心率保持在最大心率的70%左右的水平（对于年轻人，应当超过140次）。这种持续的活动，将使得供应腿部肌肉的毛细血管的氧含量降低。于是，你的身体将通过生长新的毛细血管的方式来应对，以便为腿部的肌肉提供更多的氧，并使你的双腿重新回到它们的舒适区。”<br>“这正是我们可以怎样利用身体对体内平衡的渴望而推动变化的例子：足够努力地锻炼，并且保持足够长的时间，那么，身体将以各种方式来改变，使得那种努力变得更容易。你会稍稍变得更强壮一些，积累一定的耐力，身体也变得更协调一些。但这里也有一个陷阱：一旦补偿已发生，也就是说，新的肌肉纤维已经生长出来并变得更加高效，新的毛细血管也已长出，等等。那么，身体就能轻松应对以前感到十分艰难的那些体育锻炼活动了，它会再度感到舒服。改变也停止了。因此，要使改变不断进行下去，你必须不断地加码：跑得更远一些、更快一些，并且爬坡跑。如果你不继续给自己施加一些压力，身体将会保持体内平衡，尽管此时的体内平衡不同于以前，但你将停下改进的脚步。”<br>“比如在海马体中，新的神经元可以生长，但发生在绝大多数大脑部位之中的、为了顺应心理挑战而进行的改变（比如通过训练对比度来提高人们的视力），没有包含新的神经元的长出和发育。髓磷脂的含量也会增加，在神经细胞周围形成的隔离鞘，允许神经信号更加迅速地传递；髓鞘形成可以使神经脉冲的速度提高10倍之多。因为这些神经元网络负责思考、记忆、控制移动、解读感官信号以及大脑的所有其他功能，重新调整和加快这些网络的运转速度，使人们可以做各种各样的事情，譬如不用戴眼镜读报，或者迅速确定从甲地到乙地的最佳路径等，那些事情都是以前做不了的。”</p>
-</blockquote>
-<blockquote>
-<p>一个人遇到的挑战越大，在一定程度上，大脑中的变化也越大。一方面，最近的研究表明，人在学习一项新的技能时，如果能够触发大脑结构的变化，那么，这种学习比起只是继续练习已学会的某项技能时的学习要高效得多。另一方面，在过长的时间内过分地逼迫自己，可能导致倦怠和学习低效。大脑和身体一样，对于处在舒适区之外却离得并不太远的“甜蜜点”上的挑战，改变最为迅速。<br>伦敦出租车司机、奥运会体操选手或者音乐节上小提琴演奏家等人的训练，事实上是一种充分利用大脑和身体的适应能力发展和提升新能力的方法，而这些能力，我们以前并没有通过其他方式来发展和提升。<br>这次研究之后的20年里，其他研究人员详细阐述了其研究成果，并描述了音乐训练影响大脑构造和运行的各种不同方式。例如，与非音乐家的研究对象相比，音乐家在控制移动中发挥着重要作用的大脑部位，也就是小脑，通常大一些，而且，音乐家训练的时间越长，小脑也越大。与非音乐家的研究对象相比，音乐家在皮层的各种不同部位中拥有更多的脑灰质（一种包含神经元的大脑组织），包括躯体感觉区（触觉和其他感觉）、顶上区（来自双手的感觉）以及前运动皮层（计划移动和引导在空间中的运动）。<br>音乐训练以各种不同方式改变了大脑的结构与运行，使人们的音乐演奏能力进一步增强。 换句话讲，最有效的训练形式其实不只是帮助你学会某种乐器的那些训练，而且是更深入和更高级的训练，这些训练确实增强了你演奏乐器的能力。当你演奏音乐时，这些训练改变了你大脑中的部位，从某种程度上提升了你自己的音乐“天赋”。</p>
-</blockquote>
-<p><code>这就是为什么我也喜欢研究乐理的理由吗？</code></p>
-<h2 id="1-4-心理结构与心理表征"><a href="#1-4-心理结构与心理表征" class="headerlink" title="1.4.心理结构与心理表征"></a>1.4.心理结构与心理表征</h2><blockquote>
-<p>“长期的训练，使大脑中与那种特定技能相关的部位发生了改变。这些研究有的着眼于纯智力的技能，比如数学能力。例如，与非数学家的研究对象相比，数学家的顶下小叶中的脑灰质明显多得多。”<br>“即使是我们通常认为的纯“体格技能”，比如游泳或体操（这些运动需要谨慎地控制身体的移动），大脑也在其中发挥着重要的作用，研究发现，训练也造就了大脑的改变。”<br>“但一般来讲，脑白质增多，可以加快神经信号的传送，因此，在儿童时代练习弹钢琴，似乎能使练习者具有一定神经学上的优势，这是成年以后练钢琴无法比拟的。”<br>“关于这样的心理表征，一个重要的事实是：它们都是“行业或领域特定的”，也就是说，只应用于专为它们而培养出来的技能。我们”<br>“一般来讲，这解释了关于杰出表现的一个关键事实：如果只是培育普通的技能，便没有心理表征这回事。”<br>“因此，在上一章的结尾，我们提出了一个问题，这里可以回答很大一部分：在刻意练习之中，我们的大脑究竟是什么发生了变化？将杰出人物和我们其他人区分开来的主要因素是：他们经过年复一年的练习，已经改变了大脑中的神经回路，以创建高度专业化的心理表征，这些心理表征反过来使得令人难以置信的记忆、规律的识别、问题的解决等成为可能，也使得他们能够培养和发展各种高级的能力，以便在特定的专业领域中表现卓越。”</p>
-</blockquote>
-<h3 id="1-4-1-心理表征的作用"><a href="#1-4-1-心理表征的作用" class="headerlink" title="1.4.1.心理表征的作用"></a>1.4.1.心理表征的作用</h3><blockquote>
-<p>“换句话讲，经验丰富的攀岩者已经对把手形成了心理表征，这使得他们无须有意识地思考，便知道看到的是哪一种把手，需要采用哪一类抓握方法。此外，研究人员还发现，有经验的攀岩者看到某个特定的把手时，大脑会给双手发送一个信号，让他们作好相应抓握的准备，同样无须有意识的思考。”<br>没有经验的攀岩者则必须有意识地思考每个把手适合哪种抓握方法。经验丰富的攀岩者使用心理表征来自动分析把手的能力，使他们能更快地攀岩，而且掉落的概率也更低。因此，更好的心理表征，带来了更加杰出的表现。”<br>“刻意练习的主要目的是创建有效的心理表征，而且，如我们很快将会探讨的那样，心理表征反过来在刻意练习中发挥着重要的作用。我们具有适应能力的大脑，在响应刻意练习的过程中发生的重要转变，就是发展出更好的心理表征，它反过来为提高绩效而创造了新的可能性。简单地讲，我们开始把自己对心理表征的解释视为本书的主旨，没有它，本书的其他内容都将无法成立。”<br>“研究人员把这种类型的写作称为“知识转换”（knowledge transforming），它与“知识陈述”完全相对，因为写作的过程改变并增加了作者在写作开始时拥有的知识。”<br>“这是杰出人物运用心理表征来提高技能水平的一个例子：他们监测并评估自己的技能水平，在必要时调整心理表征，使之更加有效。心理表征越有效，水平也越优异。我们已经为本书创建了一种特定的心理表征，但我们发现，这本书并不像我们希望的那样出色，因此，我们运用获得的反馈来相应地调整那一表征。”<br>“显然，针对某一本书的心理表征，比起针对一封个人信件或一个博客帖子，既重要得多，也复杂得多，但一般规则是相同的：好好地写，事先创建心理表征，以引导你努力写作，然后监测和评估你的努力，并且准备在必要时调整这一表征。”<br>“在这些领域，还有一种良性循环在起主导作用，那便是：磨砺了技能，可以改善心理表征；而改变心理表征，也有助于磨砺技能。在这方面，有点类似于鸡和蛋的关系。以花样滑冰为例：如果你不去做两周半跳这个动作，便很难就这个动作给你带来什么感觉而创建清晰的心理表征；同样，如果你没有创建清晰的心理表征，便难以做好这个动作。这听起来有点儿自相矛盾，实则不然。你一步一步地尝试着做这个动作，在此过程中，也就积累了心理表征。<br>“这类似于你一边攀爬楼梯，一边搭建新的阶梯。你攀爬的每一步阶梯，都让你来到了需要搭建新阶梯的地方。然后，你搭建了新的阶梯，爬上去之后，你又得准备搭建下一步阶梯了。如此循环往复。你现有的心理表征在引导你的表现和绩效，并使你既能监测又能判断自己的表现和绩效到底是优还是劣。随着你迫使自己去做一些以前没做过的事情，比如说，去培育一项新技能，或者磨砺一项已有的技能，那么，你也在拓展和优化自己的心理表征。心理表征得到了拓展和优化，你便能够出色做好以前从未做过的事情了。”<br>“而最优秀的音乐家往往对音乐作品有着极为细致的心理表征，他们用这些表征来指导自己的练习，到最后，指引他们在演出作品时的表现。学生之间的差别，在很大程度上最有可能取决于他们能多敏锐地察觉自己所犯的错误，也就是说，他们对音乐作品的心理表征有多么有效。”</p>
-</blockquote>
-<h3 id="1-4-1心理表征的形式"><a href="#1-4-1心理表征的形式" class="headerlink" title="1.4.1心理表征的形式"></a>1.4.1心理表征的形式</h3><blockquote>
-<p>“麦克赫森和伦威克并没有试图理解心理表征的精确特点，但另一项研究表明，那些表征可能有几种不同的形式。其中一种是听觉表征，也就是说，对某件音乐作品听起来应当是什么样子，有着清晰的认识。水平各异的音乐家使用这些表征来指导他们的练习与演奏，越是优秀的音乐家，就有越发细致的表征，不仅仅包括音高和要演奏的音符长度，而且包括它们的音量、升降调、音准、颤音、震音，与其他音符的和谐关系等，其他音符包括由其他音乐家在其他乐器上演奏的音符。优秀的音乐家不但能辨别乐声的所有这些不同特点，而且知道怎样在他们的乐器上演奏出这些声音，也就是说，他们知道，这需要他们对乐器产生自己的心理表征，这反过来与声音本身的心理表征紧密地联系在一起。”<br>“此外，学生的演奏水平越高，其训练方法越有效。这里的含义是，他们正在运用自己的心理表征，不仅为了发现错误，而且为了将适当的练习方法与音乐的难易程度紧密地匹配起来。在任何一个行业或领域，不只是音乐表演领域，技能与心理表征之间的关系是一个良性循环：你的技能越娴熟，创建的心理表征就越好；而心理表征越好，就越能有效地练习，以磨炼技能。”<br>“另一些活动，比如古典音乐演奏、数学、芭蕾等，必须得采用高度发展的、被人们广泛接受的训练方法。如果某人谨慎勤奋地遵循这些方法，那么，他几乎一定能成为该行业或领域的专家。我毕生都在研究后面这些行业或领域。”<br>“这里得到的经验是：一旦你已经辨认出杰出人物，那么，辨别出是什么使得这个人和其他人表现不同，那些差别就可以解释他的卓越成就。尽管人们做的许多事情也许和他们的杰出成就毫无关系，但至少可以从这个方面着手探索。”<br>牢牢记住所有这些，目的是使你知道有目的的练习，并且为你指出更有效的方向。如果你发现某种方法管用，继续做下去；如果不管用，马上停下来。你越是能够调整自己的练习方法，模仿所在行业或领域中最杰出的人物，那你的练习也可能越是有效。”<br>“但是，我可以将这个核心信息和其他信息结合起来看待：在绝大多数需要人类付出努力的行业或领域，只要以正确的方式训练，人们提高自身绩效和表现的能力将是巨大无比的。如果你练习做某件事情几百个小时，几乎可以肯定，你能看到巨大的进步（想一想史蒂夫·法隆在经历了200个小时的练习之后的效果），但那还只是“万里长征迈出的第一步”。你可以坚持、坚持、再坚持，使你自己变得卓越、卓越、更卓越。你的进步有多大，取决于你自己。”<br>“我们再以完全不同的视角来看待1万小时法则：你必须花1万小时或更长时间来练习，以成为世界上最杰出的小提琴家、国际象棋大师或高尔夫球手，其原因是，你将与之比较或竞争的那些人已经花了这么长的时间来练习。人们的绩效或表现的提高，并不存在极限，而更多的练习不一定会带来更大的进步。因此，如果你希望成为你所在的高度竞争行业或领域中的世界上最杰出人物，就得付出成千上万个小时的艰苦努力，只为了与那些在同类工作中同样勤学苦练的人有平等竞争的机会。”</p>
-</blockquote>
-<h1 id="2-边干边学（情境学习）的做法"><a href="#2-边干边学（情境学习）的做法" class="headerlink" title="2.边干边学（情境学习）的做法"></a>2.边干边学（情境学习）的做法</h1><blockquote>
-<p>“边干边学”方法的一个好处是，它使人们熟悉练习的习惯，并思考如何练习。一旦他们理解了日常练习的重要性，并意识到可以用练习来实现多大的进步，那么，他们会找机会将其他的日常商业活动转变成练习活动。到最后，练习变成了日常工作的一部分。如果练习达到了计划中的目标，其结果是大家都培养了一种全然不同的心态，这种心态不再认为工作日只能用来工作，练习只能在特殊的时候、特定的场合才能进行，而且只有当顾问来到公司以后才能开始训练课。这种以练习为导向的心态，与杰出人物的心态非常相似，他们总是不停地练习，并且想尽各种办法在日常的工作和生活中磨砺自己的技能。<br>“对于商业世界中任何一个着眼于寻找有效改进方法的人，我的基本建议是找寻一种与刻意练习原则相一致的方法，问自己以下这些问题：这种方法，是不是逼着人们走出舒适区，迫使人们尝试做一些对他们来说并不容易的事情？它有没有提供关于绩效和表现的即时反馈，以及关于可以做些什么事情来提高绩效和表现的反馈？那些制订了这种方法的人，有没有辨别出他们所处的特定行业或领域之中的最杰出人物？有没有确定是什么因素将杰出人物与其他人区分开来？训练是不是被设计用来提高行业或领域内的杰出人物所拥有的那些特定技能？如果对所有问题的回答全都是肯定的，尽管也许不能保证那种方法有效，至少可以肯定，它是有效方法的可能性大得多。”<br>“我喜欢丹尼斯，甚至不只是由于他的这一番表态，而且是由于他意识到：刻意练习不只是针对那些很早就开始训练的孩子，那些追求长大后成为国际象棋特级大师、奥林匹克运动员或者世界级音乐家的孩子。它也不只是针对类似于美国海军等大型组织的成员，这些组织拥有足够的财力物力，能制订一些高强度的训练计划。刻意练习针对每一个有梦想的人。 它针对每个想学习怎样画画、编程、变戏法、吹萨克斯管、写出“伟大的小说”的人。它针对每个想提高自己的扑克牌技巧、垒球技能、销售技能、歌唱技艺的人。它针对所有那些想掌控自己的人生、塑造自己的潜力、不向命运低头、不甘心于现状的人。”<br>“你希望导师尽可能多地在上课期间指导你，不仅教你如何练习，而且告诉你应当注意哪些特定的方面、你犯了哪些错误、怎样识别卓越的表现。要记住：导师可以做的最重要的事情是帮你创建心理表征，以便你能监测和纠正你自己的表现。”<br>“丹尼斯后来的经验阐明了关于指导的最后一条经验：当你自己改变了时，可能需要更换导师。 几年来，丹尼斯在他最初的高尔夫教练指导下提高了自己的球技，但到了一定程度，他的进步就停滞了。他已经吸收了教练教给他的一切，准备找一位水平更高的教练。如果你发现自己已经到了不再能快速进步，或者根本没有进步的地步，别害怕，去找一位新的导师。最重要的事情是不停地向前、向前。”<br>“如果你想提高棋艺，只和别人下棋，无法提高；你要单独研究特级大师的棋局，才可能提高。如果你想提高自己的保龄球技能，每周星期二晚上和你的保龄球联盟球队在一起玩，对你没什么帮助。你需要花一些时间和高水平的队友在一起。要记住：如果你在走神，或者你很放松，并且只为了好玩，你可能不会进步。”<br>“如何练习这种专注。那些球员大约在二年级时便慢慢懂得有目的的练习与普遍练习之间有何区别，以及有目的的练习可能意味着什么。科尔在他的论文中引用了一位高中高尔夫球员的话，以解释球员在练习中何时改变了这种理解，以及是怎么样改变的。从那时候起，我才真正开始了练习。在练习中，我会有意识地朝着特定的目标迈进，而不只是简单地挥杆击球或推杆进球。”</p>
-</blockquote>
-<blockquote>
-<p>“学会以这种方式投入，即有意地提升和精进你的技能，是提高训练效果的最强大方式。”<br>“这是最大限度改进你的练习的秘诀。即使在健美运动或长跑运动等体育项目中，绝大部分的训练由那些看似漫无目的的、重复的动作组成，用正确的方式来关注那些动作，会带来更大的进步。研究长跑运动员的研究人员发现，业余运动员往往幻想或者想着更加愉快的话题，以便让他们的思维从跑步训练的痛苦与紧张中转移出去，而杰出的长跑运动员则保持身体协调，以找到最理想的步调并做出调整，在整个比赛中保持最佳的步伐”<br>“在较短的时间内投入百分之百的努力来练习，比起在更长时间内只投入70%的努力来练习，效果更好。一旦你发现自己再也无法有效地专注于练习了，那便停下来。一定要确保每天都保持足够的睡眠，以便能够最大限度地集中精力练习。”</p>
-</blockquote>
-<h2 id="2-1-富兰克林如何练习写作"><a href="#2-1-富兰克林如何练习写作" class="headerlink" title="2.1.富兰克林如何练习写作?"></a>2.1.富兰克林如何练习写作?</h2><blockquote>
-<p>“后来，他偶然看到一期名为《观察家》（The Spectator）的英国杂志，发现自己被杂志中高质量的文章所深深吸引。富兰克林决定，他也要写出那些漂亮的文章，但没有人教他怎么练习。他可以做些什么呢？他提出了一系列聪明的方法，目的是既教自己写作，也教《观察家》的投稿者提高写作水平。”<br>“富兰克林于是开始观察，一旦他忘记了文章中一些句子的措辞，可以怎样以最为相近的方式重写那些句子。因此，他选择了自己喜欢的几篇文章，然后写下对每个句子内容的简短描述，只要让他能够回想起句子讲的是什么意思便行。几天后，他开始厌倦从自己一开始写下的线索中重写文章的方法。他的目的并不是逐字逐句地复写那些文章，而是要写出自己的文章，而且要让自己的文章和那些文章一样描写细致入微、用词精准简练。他写完后，回头找到最初的文章，将它们与自己写出的文章进行对比，并在必要时纠正自己写的版本。这教会了富兰克林如何明确且中肯地表达观点。”<br>“富兰克林发现，这些练习的最大问题是，他的词汇积累并不像《观察家》的投稿者那样丰富。并不是说他不认识那些词，而是他无法做到在写作时“文思泉涌、信手拈来。写诗将迫使他想出大量其他不同的词语，他通常不会想到那些词语，只有在需要与诗歌的韵律和声律模式相一致时，才会去努力搜寻它们。因此，他找到《观察家》杂志上的一些文章，并将它们改写成诗句。接下来，在等待了足够长的时间，以至于最初记下来的诗句和措辞在他的记忆中已经消失时，他再把诗句改写成散文。这使他形成了”“一个习惯，就是要找到正确的词汇，并且增加对词汇数量的积累，以至于他可以迅速从记忆中调用这些词汇。”<br>“最后，富兰克林再来完善文章的总体结构和逻辑。他又一次找来《观察家》的文章，并为每个句子都写下一些提示线索。但这一次，他把那些线索写在另一些纸上，并且故意把顺序打乱，使词汇完全处于无序的状态。然后，他等待足够长的时间，不仅让自己忘记了最初的文章中句子如何措辞，还忘记了那些词汇的顺序，再一次复写文章”“他找来从某一篇文章中摘抄下来的、没有按顺序排列的提示线索，并按他认为最符合逻辑的顺序来排列，根据每条线索写出一些句子，并将自己写的结果与最初的文章进行对比。这样的练习，迫使他小心翼翼地思考怎样在文章中理清思路。如果他发现，在文章中的某些地方，他整理的思路与原文作者的思路不一致，他会纠正自己，并试着从这些错误中学习。他以自己特有的谦虚的方式，在自传中回忆自己怎样分辨哪些练习可以产生期望的效果，“有时候，我很高兴地发现，在一些重要的小细节上，我一直足够幸运，能够改进方法或语言，而这鼓励我认为，假以时日，我可能成为一名可以被人接受的作家，那可是我最大的梦想。”<br>“他成为美国早期历史上最受人尊敬的作家，他的著作《穷理查智慧书》以及后来的自传，成为美国文学中的经典。富兰克林解决了一个许多人经常面临的问题，即想要提高写作水平，但没有人教他怎么做”<br>“不论是什么原因，如果你遵循刻意练习的一些基本原则依然可能实现进步，而许多的基本原则对富兰克林来说，似乎天生就知道。”</p>
-</blockquote>
-<h2 id="2-2-3F练习法则"><a href="#2-2-3F练习法则" class="headerlink" title="2.2.3F练习法则"></a>2.2.3F练习法则</h2><blockquote>
-<p>“专注（focus）、反馈（feedback）以及纠正（fix it）。将技能分解成一些组成部分，以便反复地练习，并且有效地分析、确定你的不足之处，然后想出各种办法来解决它们。”<br>“我们可以采用类似的方法，在许多行业和领域中创建有效的心理表征。在音乐界，莫扎特的父亲教他作曲，采用的方法是让他研究当时某些最杰出的作曲家，并复制他们的作品；在艺术界，长期以来，有抱负的艺术家通过复制大师们的绘画和雕像作品来提高自己的技能。事实上，在某些情况下，他们这样的方式，和富兰克林用于提高写作能力的方式十分类似，也就是说，通过研究大师的作品，努力从记忆中复制它，然后将复制品与原始作品进行对比，以发现其中的差别，并予以纠正。有些艺术家甚至十分擅长仿制，以至于他们可以靠伪造为生，但是，这通常并不是练习的主要目的。艺术家并不想制作出与别人作品很像的作品；他们只是想提高技能，改进指导专业特长的心理表征，并运用那些专业特长来表达他们自己的艺术愿景。”<br>“我们从史蒂夫的经历中学到的经验，对每个遇到停滞阶段的人来说都是真实的：要越过这种停滞阶段，最好的办法是以新的方式挑战你的大脑或身体。例如，健美运动员会改变他们训练的类型，增加或减少他们举重的力量或反复练习的次数，并且每周变换一下训练日程。实际上，他们大多数人会主动地变换训练模式，使自己不至于一开始就陷入停滞。各种类型的交叉训练，也是基于这一相同”<br>“简单地概括，这就是问题所在：有目的的练习是一项艰巨的任务。它难以坚持下去，即使你仍然在坚持练习，比如，你还是经常去健身房，或者你每个星期依然花很多时间练习弹吉他，但你难以保持专注和努力，因此，到最后你不再能推动自己前进，而且不再进步。问题是，你可以做些什么来改变呢？”</p>
-</blockquote>
-<h2 id="2-3-优秀小提琴生的练习诀窍"><a href="#2-3-优秀小提琴生的练习诀窍" class="headerlink" title="2.3.优秀小提琴生的练习诀窍"></a>2.3.优秀小提琴生的练习诀窍</h2><blockquote>
-<p>“我在研究柏林的小提琴学生时发现，他们中大多数人更喜欢早晨一起床就开始练习。他们已经制订了练习日程，以便在那个时间不受到其他任何事情的干扰。那个时间是专门留给练习的。除此之外，把那个时间作为练习时间，还制造了一种习惯与责任的感觉，使自己不太可能受到其他事情的诱惑。在柏林的小提琴学生中，最杰出的和优异的学生，平均每周比优秀的学生大约多睡了5个小时，最主要是午休时多睡了一些时间。参与我们研究的所有学生，无论是优秀的、优异的还是最杰出的，每周花在休闲活动上的时间大致相当，但是，最杰出的学生比其他学生能够更准确地估计他们参加休闲活动的时间，这表明，他们会尽更大的努力去规划时间。良好的规划，可以帮助你避免受到许多占用你大量时间的事情的干扰，以便把更多的时间留给练习。”<br>“一般来讲，要找出那些可能干扰你练习的事情，并想办法将其影响控制在最小。如果你可能被你的智能手机分神，把它关机。或者，最好是把它关机之后，还放在另一个房间。如果你早晨起不来，而且发现早晨的锻炼格外艰难，那么，把你的跑步或锻炼安排到晚些时候，到那时，你的身体不会如此抗拒锻炼。我注意到，那些难以在早晨开始练习的人们，往往没有获得足够的睡眠。理想的情况是，你每天应当睡到自然醒（也就是说，不能让闹钟闹醒你），并且在你起床之后，觉得神清气爽。如果不是这种情况，你可能得早点上床睡觉。尽管任何一个特定的因素可能只对你产生微小的影响，但各种因素的影响是会累积的。”<br>“杰出人物往往做两件有益的事情，它们看起来似乎都与动机无关。第一件是一般的身体保养：保证充足的睡眠并保持健康。如果你疲倦了或者生病了，就更难保持专注，更易分心走神。如我在第4章中提到的那样，小提琴学生全都注意让自己每天晚上保持高质量的睡眠，他们中的很多人还会在上午的练习结束之后午休一会儿。第二件是将练习课的时间限制在1小时左右。如果比那个时间长得多，你将无法保持高度的专注。而且，你刚开始练习的时候，可能还要将时间压缩一些。如果你的练习时间超过1小时，过1小时就休息一下。”<br>“幸运的是，你将发现，随着时间的推移，继续练习似乎更容易一些。你的身体和大脑将习惯练习和锻炼带来的痛苦。有趣是的，研究发现，尽管运动员会适应与他们的运动项目相关的特定类型的痛苦，但他们不能适应一般的痛苦。他们依然会感受到其他类型的痛苦，而且，这种痛苦感将和其他人的感觉一样强烈。同样，随着时间的推移，音乐家和高强度练习的其他人会达到这样的地步：和他们刚开始时相比，连续几个小时的练习似乎在心理上没那么痛苦了。这种练习从来不会变得十分有趣，但到最后，它越来越接近自然，因此，继续下去也就没那么难了。”</p>
-</blockquote>
-<h2 id="2-4-刻意练习的动机：相信自己可以成功"><a href="#2-4-刻意练习的动机：相信自己可以成功" class="headerlink" title="2.4.刻意练习的动机：相信自己可以成功"></a>2.4.刻意练习的动机：相信自己可以成功</h2><blockquote>
-<p>“刻意练习中另一个重要的动机因素是相信自己可以成功。当你真的觉得不喜欢自己的状态，为了逼一下自己，你必须相信你可以提高自己，并且跻身最优秀者的行列，特别是对那些着眼于成为本行业本领域杰出人物的人而言。这种信念的力量十分强大，甚至可以战胜现实。”<br>“刚刚十多岁时，贡德十分热爱在森林中跑步，他和父亲都对他究竟能跑多快感到好奇。两人在丛林中找到了一条约1500米长的路线，贡德在沿着那条路线跑的时候，父亲就拿着一个闹钟来测量他跑步的时间。有一次，贡德跑完了全程，他的父亲告诉他，他在4分50秒的时间里跑完了1500米，这对于在丛林中跑步的人来说，是特别优秀的成绩。后来，贡德在他的回忆录中写道，当时听父亲说到这个成绩，他倍受鼓舞，相信自己在跑步这个项目上有光明的前途，因此开始更加认真地训练。”<br>“结果发现，这些杰出人物在孩提时代，其父母曾想尽各种办法防止他们半途而废。特别是，有几位杰出人物曾提到，他们年幼时出现生病或者受伤的情况，在很长时间内某种程度地影响到他们的练习。等到他们身体终于痊愈并恢复练习时，很难达到生病或受伤之前的那种水平，因此感到十分沮丧，只想放弃练习。他们的父母告诉他们，如果真的想放弃，可以放弃，但他们首先需要继续练习下去，以恢复到他们生病或受伤之前的水平。而这发挥了作用。过了一段时间，等到他们恢复了以前的水平时，他们意识到，他们实际上可以继续进步，他们面临的障碍只是暂时的。”<br>“他知道，自己每周都至少要提出一个有趣的问题，而且要回答其他人提出的问题，这使得他有额外的动力来阅读和研究在那个时代的科学、政治学和哲学等学科中最紧迫的、在学术上最具有挑战性的事情。”<br>“在我的邮件收件箱中，充满了类似这样的故事。一位来自丹麦的精神治疗医生运用刻意练习方法来提高自己的歌唱水平，最终录制了一些歌曲，在全丹麦的各家广播电台播放。一位来自美国佛罗里达州的机械工程师通过刻意练习提升了绘画技能，并送我一幅他第一次画的油画，那真的非常不错。一位来自巴西的工程师决心练习1万小时（又是这个数目！），使自己成为折纸手工专家。这些例子数不胜数。所有这些人，只有两件事情是共同的：他们全都怀揣一个梦想，而且，在了解了刻意练习的知识后，全都意识到，总是有一条路径通向他们的那个梦想！”<br>“研究的结果与我在众多的领域和行业中观察到的结果相一致，不仅包括唱歌和数学，还包括写作、绘画、网球、高尔夫球、园艺，以及一系列比赛（如拼字大赛和填字游戏等）：人们停止学习和进步的脚步，并不是因为他们达到了某种天生的极限，而是因为他们停止了训练，或者不论出于什么原因，从来没有开始过训练。”</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/02/24/My-New-Post-1/" data-id="clhvzvr8r0001zkwj9wswaj86" data-title="读笔 之 刻意练习：如何从新手到大师" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BB%E7%AC%94/" rel="tag">读笔</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/R%E8%AF%AD%E8%A8%80/">R语言</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C/">写作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E7%AC%94/">读笔</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8E%9F%E7%A5%9E/" rel="tag">原神</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" rel="tag">社交媒体</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E6%8A%80/" rel="tag">科技</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%82%E5%AF%9F/" rel="tag">观察</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E7%AC%94/" rel="tag">读笔</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%98%85%E8%AF%BB/" rel="tag">阅读</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/NLP/" style="font-size: 10px;">NLP</a> <a href="/tags/%E5%86%99%E4%BD%9C/" style="font-size: 15px;">写作</a> <a href="/tags/%E5%8E%9F%E7%A5%9E/" style="font-size: 11.67px;">原神</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 13.33px;">学习</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" style="font-size: 18.33px;">社交媒体</a> <a href="/tags/%E7%A7%91%E6%8A%80/" style="font-size: 10px;">科技</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a> <a href="/tags/%E8%A7%82%E5%AF%9F/" style="font-size: 11.67px;">观察</a> <a href="/tags/%E8%AF%BB%E7%AC%94/" style="font-size: 16.67px;">读笔</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 10px;">阅读</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/05/20/My-New-Post-31/">2021年6月9日</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/20/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/21/My-New-Post-43/">读笔 之 忧郁的热带（待整理完）</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/08/My-New-Post-42/">瑞克和辐射之后的思考</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/26/My-New-Post-41/">2021年8月26日</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+自1973年以来，我学到了什么呢？我学到了一些关于人类与人类社会的更加基本的、永恒的道理，学到了如何让人类和人类社会实现更好的发展，学到了倒退和崩溃的风险是永远存在的……我意识到了一个文明社会是何等脆弱……我还明白了个人成就的重要意义。在50多岁、将近60岁时，我意识到，同知识、道德和精神上的满足相比，尘世的一切荣耀与成功都是转瞬即逝的，一切感官上的愉悦和快乐都是短暂的……我不禁开始怀疑我所拥有的东西中有多少是先天决定的，又有多少是后天培养的。如果我没有经历过艰 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/02/27/My-New-Post-4/" title="2021年2月27日">2021年2月27日</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-02-27T09:41:51.000Z" title="发表于 2021-02-27 17:41:51">2021-02-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/">社媒日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/">社交媒体</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content">今天看《旺达幻视》，一口气追完。第八集时意识到，原来人无法真正理解别人的处境。前几集里旺达说，她童年悲惨，我没有什么感觉。直到她的童年在女巫魔法下昨日重现，栩栩如生——爆炸像一瞬间的黑暗，她在尘砾中醒来，灰头土脸。回头寻找，却发现双亲已经离开。当今战乱地区的孩子，他们的记忆又是如何；当他们长大，假如有幸生活在和平中，童年的痛苦是否会像梦魇，在不为人知的深夜向着自己袭来；当他们和别人讲述从前，被回应“我很同情你”，又会真的感到安慰吗？——独自承受的记忆，像武汉封城后为母亲敲锣求救的女孩，别人只有「道听途说」，语言学里的「所指」，在哲学意义上，好像永远无法到达了。记忆，由个体保存、讲述、转播，穿越时光，飞向无垠大地，却只是重重隔隔的幻影，无法和过去拥抱、接近。这样看来，「面对苦难」，本质还是伪命题。
+正值227一周年，又来发文删帖封话题，令人火大，那就继续抵制吧。另外，有博主发的视频，截止到今年2月28日，已经被删两次：同人的意义是什么，还有博主说：「不止是「偶像失声」，你和你的团队删帖、封号、炸话题也让别人失声，而这一切都发生在你这篇文章里称自己在反思挣扎的时间段里，而直到今天，你仍然没 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://github.com/YAN-SU/YAN-SU.github.io/blob/main/images/%E6%96%8B%E8%97%A4%E9%A3%9E%E9%B8%9F%E5%A4%B4%E5%83%8F.jpg?raw=true" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Pekoe</div><div class="author-info__description">追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">一般会写人间百事、游戏见闻，偶尔转记一些不错的博客文字。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/18/My-New-Post-48/" title="五月见闻">五月见闻</a><time datetime="2023-05-18T07:17:17.000Z" title="发表于 2023-05-18 15:17:17">2023-05-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/17/My-New-Post-47/" title="四月见闻">四月见闻</a><time datetime="2023-05-17T07:17:17.000Z" title="发表于 2023-05-17 15:17:17">2023-05-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/16/My-New-Post-46/" title="三月见闻">三月见闻</a><time datetime="2023-05-16T07:17:17.000Z" title="发表于 2023-05-16 15:17:17">2023-05-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/15/My-New-Post-45/" title="二月见闻">二月见闻</a><time datetime="2023-05-15T07:17:17.000Z" title="发表于 2023-05-15 15:17:17">2023-05-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/14/My-New-Post-44/" title="一月见闻">一月见闻</a><time datetime="2023-05-14T07:17:17.000Z" title="发表于 2023-05-14 15:17:17">2023-05-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/R%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">R语言</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%86%99%E4%BD%9C/"><span class="card-category-list-name">写作</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%A4%BE%E5%AA%92%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">社媒日常</span><span class="card-category-list-count">35</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AF%BB%E7%AC%94/"><span class="card-category-list-name">读笔</span><span class="card-category-list-count">4</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%AF%BB%E7%AC%94/" style="font-size: 1.4em; color: rgb(134, 141, 137)">读笔</a><a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 1.25em; color: rgb(198, 31, 36)">学习</a><a href="/tags/%E5%86%99%E4%BD%9C/" style="font-size: 1.3em; color: rgb(156, 74, 166)">写作</a><a href="/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/" style="font-size: 1.35em; color: rgb(193, 26, 108)">社交媒体</a><a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 1.45em; color: rgb(85, 17, 141)">日常</a><a href="/tags/%E8%A7%82%E5%AF%9F/" style="font-size: 1.2em; color: rgb(8, 116, 119)">观察</a><a href="/tags/%E7%A7%91%E6%8A%80/" style="font-size: 1.15em; color: rgb(10, 183, 14)">科技</a><a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 1.15em; color: rgb(138, 152, 135)">编程</a><a href="/tags/NLP/" style="font-size: 1.15em; color: rgb(49, 161, 31)">NLP</a><a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 1.15em; color: rgb(175, 25, 133)">阅读</a><a href="/tags/%E5%8E%9F%E7%A5%9E/" style="font-size: 1.2em; color: rgb(111, 185, 76)">原神</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">四月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">14</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-05-18T16:20:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-05-20T13:48:24.816Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Pekoe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div></div></body></html>

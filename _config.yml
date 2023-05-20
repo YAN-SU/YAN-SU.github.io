@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 宇宙庇护所
+subtitle: ' 笑把金樽邀落日，绿杨城郭正春风。'
+description: '追随朝圣山学社和史蒂芬平克的理念|玩原铁的杂食互宠党最近在玩王国之泪'
 keywords:
-author: John Doe
-language: en
+author: Pekoe
+language: zh-CN
 timezone: ''
 
 # URL
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
